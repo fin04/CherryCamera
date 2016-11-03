@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/preview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true" >
+
+        <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/camera_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/camera_filter_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/camera_outline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/guideline"
+        android:scaleType="center"
+        android:src="@drawable/aim0" />
+
+    <ImageView
+        android:id="@+id/camera_preview_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:src="@drawable/aim2"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/camera_preview_pitch_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/aim1"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/camera_preview_pitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:src="@drawable/aimpitch"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/camera_timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0.75"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/FONTSIZE_TITLE1"
+        android:typeface="monospace"
+        android:visibility="invisible" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/camera_upper" />
+
+    <LinearLayout
+        android:id="@+id/preview_layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ViewFlipper
+            android:id="@+id/ViewFlipper01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/libraryView1"
+                layout="@layout/camera_left" />
+
+            <include
+                android:id="@+id/libraryView2"
+                layout="@layout/camera_option" />
+        </ViewFlipper>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dp" >
+
+            <Button
+                android:id="@+id/btn_camera_shutter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_shutter_btn" />
+
+            <ImageView
+                android:id="@+id/img_camera_shutter_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/shutter" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_photo_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/gallery" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="10dp" >
+
+        <SeekBar
+            android:id="@+id/seekbar_expo"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:duplicateParentState="true"
+            android:maxHeight="10dip"
+            android:minHeight="20dip"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:progressDrawable="@drawable/seekbar_custom_expo"
+            android:thumb="@drawable/expo_seekbtn" />
+
+        <!-- <SeekBar
+            android:id="@+id/seekbar_expo"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:maxHeight="10dip"
+            android:minHeight="20dip" /> -->
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/alertFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp" >
+
+    <!-- <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="12dp" >
+
+        <Button
+            android:id="@+id/btn_camera_shutter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_shutter_btn" />
+
+        <ImageView
+            android:id="@+id/img_camera_shutter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/shutter" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_photo_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gallery" /> -->
+    
+</FrameLayout>

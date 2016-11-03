@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/OPTION_MENU_WIDTH"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/OPTION_MENU_HEIGHT"
+        android:background="@color/color_option_button"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/option_title_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/cherry_on" />
+
+        <TextView
+            android:id="@+id/option_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/btn_option_close"
+            android:layout_toRightOf="@+id/option_title_icon"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:text="@string/camera_option_filter"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/FONTSIZE_Biggest" />
+
+        <ImageButton
+            android:id="@+id/btn_optionmenu_filter_close"
+            android:layout_width="@dimen/MAIN_TABBUTTON_WIDTH"
+            android:layout_height="@dimen/MAIN_TABBUTTON_WIDTH"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/slt_color_buttonselect"
+            android:src="@drawable/prev" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView_filtermenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/filter_radio0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/OPTION_MENU_HEIGHT"
+                android:background="@drawable/selector_menu_boxbutton"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/cherry_filter_icon0"
+                android:drawablePadding="5dp"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/FONTSIZE_Small" />
+
+            <RadioButton
+                android:id="@+id/filter_radio1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/OPTION_MENU_HEIGHT"
+                android:background="@drawable/selector_menu_boxbutton"
+                android:button="@null"
+                android:drawableLeft="@drawable/cherry_filter_icon1"
+                android:drawablePadding="5dp"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/FONTSIZE_Small" />
+
+            <RadioButton
+                android:id="@+id/filter_radio2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/OPTION_MENU_HEIGHT"
+                android:background="@drawable/selector_menu_boxbutton"
+                android:button="@null"
+                android:drawableLeft="@drawable/cherry_filter_icon2"
+                android:drawablePadding="5dp"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/FONTSIZE_Small" />
+
+            <RadioButton
+                android:id="@+id/filter_radio3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/OPTION_MENU_HEIGHT"
+                android:background="@drawable/selector_menu_boxbutton"
+                android:button="@null"
+                android:drawableLeft="@drawable/cherry_filter_icon3"
+                android:drawablePadding="5dp"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/FONTSIZE_Small" />
+        </RadioGroup>
+    </ScrollView>
+
+</LinearLayout>

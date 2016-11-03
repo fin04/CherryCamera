@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\share_via_barcode.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-nodpi\\share_via_barcode.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\shopper_icon.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-nodpi\\shopper_icon.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\launcher_icon.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-nodpi\\launcher_icon.png"
+    }
+]

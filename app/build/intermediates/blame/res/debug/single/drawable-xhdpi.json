@@ -1,0 +1,586 @@
+[
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cherry_filter_icon0.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\cherry_filter_icon0.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_auto.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_auto.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_night.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_night.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\expo_seekbtn_on.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\expo_seekbtn_on.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\next.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\next.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\help0.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\help0.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_nightportrait.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_nightportrait.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\flash_on.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\flash_on.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cherry_filter3.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\cherry_filter3.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\meminfo_line.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\meminfo_line.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_check.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\btn_check.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\timer_30.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\timer_30.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_action.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_action.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_sunset.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_sunset.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_portrait.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_portrait.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_hdr.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_hdr.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_fireworks.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_fireworks.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\title.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\title.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_landscape.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_landscape.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_previewbox1.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_previewbox1.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_night.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_night.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_default.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_default.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_bg1.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\menu_bg1.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_snow.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_snow.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\exit.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\exit.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\exposure_light_1.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\exposure_light_1.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery50.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\battery50.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\aim3.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\aim3.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cherry_filter_icon1.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\cherry_filter_icon1.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_menubox0.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_menubox0.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cherry_filter2.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\cherry_filter2.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_nightportrait.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_nightportrait.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\pitch.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\pitch.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\flash_auto.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\flash_auto.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\aim1.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\aim1.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_fireworks.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_fireworks.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\timer_10.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\timer_10.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cherry_off.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\cherry_off.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\exposure_dark_1.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\exposure_dark_1.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\picsize.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\picsize.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_none.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_none.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_flowers.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_flowers.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\focus_fix.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\focus_fix.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\thumb.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\thumb.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\focus_macro.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\focus_macro.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_flower.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_flower.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_box0.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_box0.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cherry_filter_icon2.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\cherry_filter_icon2.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_roundbox0.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_roundbox0.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\wrong_file.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\wrong_file.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\aim0_.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\aim0_.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_portrait.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_portrait.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\gallery.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\gallery.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_candlelight.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_candlelight.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_auto.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_auto.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\exposure_light_0.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\exposure_light_0.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_previewbox2.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_previewbox2.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_steady.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_steady.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_default.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_default.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\camera_change.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\camera_change.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\focus_auto.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\focus_auto.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_sunset.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_sunset.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\gallery_board_mid.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\gallery_board_mid.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_bg0.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\menu_bg0.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\aim_guide.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\aim_guide.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_barcode.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_barcode.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_facing.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_facing.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\option_etc.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\option_etc.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\shutter_focus.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\shutter_focus.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_theatre.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_theatre.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_beach.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_beach.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\prev.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\prev.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\thumb_row_c.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\thumb_row_c.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\shutter_pressed.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\shutter_pressed.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_party.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_party.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_rountbox0.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_rountbox0.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\preview_save1.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\preview_save1.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_rountbox1.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_rountbox1.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\fullimage.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\fullimage.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_title.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\menu_title.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\preview_save0.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\preview_save0.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\shutter_.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\shutter_.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\check_off.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\check_off.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\freemem.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\freemem.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\guideline.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\guideline.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\timer.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\timer.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\share.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\share.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\flash_off.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\flash_off.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\gallery_board_bottom.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\gallery_board_bottom.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_guide_upper.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\menu_guide_upper.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\s_bluetooth_on.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\s_bluetooth_on.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_beach.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_beach.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\focus_infinity.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\focus_infinity.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\thumb_row0.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\thumb_row0.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\menu.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\thumb_row.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\thumb_row.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\aim0.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\aim0.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\info.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\info.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\expo_seekbar.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\expo_seekbar.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\timer_5.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\timer_5.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\battery.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\meminfo_bg.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\meminfo_bg.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\effect_other.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\effect_other.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\shutter.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\shutter.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_candle.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_candle.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\timer_sound.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\timer_sound.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_barcode.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_barcode.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_theatre.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_theatre.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_action.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_action.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cherry_filter_icon3.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\cherry_filter_icon3.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\camera_upper_bg.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\camera_upper_bg.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_landscape.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_landscape.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_snow.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_snow.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\gallery_board_top.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\gallery_board_top.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\aimpitch.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\aimpitch.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_roundbox1.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_roundbox1.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery25.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\battery25.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_sports.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\icon_sports.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\zoom_on.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\zoom_on.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_box1.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_box1.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cherry_filter1.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\cherry_filter1.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\expo_seekbtn.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\expo_seekbtn.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\shutter_normal.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\shutter_normal.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\check_on.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\check_on.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_scnbutton.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\menu_scnbutton.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\exposure_dark_0.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\exposure_dark_0.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\flash_redeye.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\flash_redeye.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\flash_torch.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\flash_torch.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_previewbox0.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_previewbox0.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\timer_3.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\timer_3.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cherry_on.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\cherry_on.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_party.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_party.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_check_over.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\btn_check_over.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scene_steady.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\scene_steady.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_menubox1.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\button_menubox1.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\option.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\option.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\aim2.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\aim2.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\help.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\help.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\trash.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\trash.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\zoom_off.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\zoom_off.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\selectguide.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\selectguide.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_scnbutton_click.9.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\menu_scnbutton_click.9.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\s_bluetooth_off.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\s_bluetooth_off.png"
+    },
+    {
+        "merged": "E:\\project\\androidStudio\\CherryCamera\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_guide_bottom.png",
+        "source": "E:\\project\\androidStudio\\CherryCamera\\app\\src\\main\\res\\drawable-xhdpi\\menu_guide_bottom.png"
+    }
+]

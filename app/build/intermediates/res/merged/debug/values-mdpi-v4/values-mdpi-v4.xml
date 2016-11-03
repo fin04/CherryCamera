@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="BANNER_HEIGHT">50dp</dimen>
+    <dimen name="BANNER_WIDTH">320dp</dimen>
+    <dimen name="EXPOSEEK_WIDTH">330dp</dimen>
+    <dimen name="FONTSIZE_Big">17sp</dimen>
+    <dimen name="FONTSIZE_Biggest">18sp</dimen>
+    <dimen name="FONTSIZE_Normal">16sp</dimen>
+    <dimen name="FONTSIZE_Small">15sp</dimen>
+    <dimen name="FONTSIZE_Smallest">14sp</dimen>
+    <dimen name="FONTSIZE_TITLE1">80sp</dimen>
+    <dimen name="FONTSIZE_TITLE2">34sp</dimen>
+    <dimen name="GALLERYBUTTON_HEIGHT">65dp</dimen>
+    <dimen name="GALLERYBUTTON_WIDTH">65dp</dimen>
+    <dimen name="MAIN_MENU_HEIGHT">140dp</dimen>
+    <dimen name="MAIN_TABBUTTON_WIDTH">70dp</dimen>
+    <dimen name="OPTION_MENU_HEIGHT">60dp</dimen>
+    <dimen name="OPTION_MENU_WIDTH">300dp</dimen>
+    <dimen name="SIDEBUTTON_WIDTH">24dp</dimen>
+    <dimen name="THUMNAIL_CHECKBOX">50dp</dimen>
+    <dimen name="THUMNAIL_HEIGHT">200dp</dimen>
+    <dimen name="THUMNAIL_WIDTH">200dp</dimen>
+</resources>

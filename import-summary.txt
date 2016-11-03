@@ -1,0 +1,299 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\libraries\
+* .idea\libraries\dexedLibs.xml
+* .idea\libraries\libs.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* cherry_Camera.iml
+* icon-web.png
+* proguard.cfg
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* libs\core.jar => app\libs\core.jar
+* libs\GoogleAdMobAdsSdk-6.4.1.jar => app\libs\GoogleAdMobAdsSdk-6.4.1.jar
+* libs\universal-image-loader-1.9.4.jar => app\libs\universal-image-loader-1.9.4.jar
+* lint.xml => app\lint.xml
+* res\ => app\src\main\java\
+* res\anim\fadein.xml => app\src\main\resources\anim\fadein.xml
+* res\anim\fadeout.xml => app\src\main\resources\anim\fadeout.xml
+* res\anim\icon_rotate90.xml => app\src\main\resources\anim\icon_rotate90.xml
+* res\anim\icon_rotate90_back.xml => app\src\main\resources\anim\icon_rotate90_back.xml
+* res\anim\rotate360.xml => app\src\main\resources\anim\rotate360.xml
+* res\drawable-hdpi\icon.png => app\src\main\resources\drawable-hdpi\icon.png
+* res\drawable-ja-hdpi\help.png => app\src\main\resources\drawable-ja-hdpi\help.png
+* res\drawable-ko-hdpi\help.png => app\src\main\resources\drawable-ko-hdpi\help.png
+* res\drawable-ldpi\ic_launcher.png => app\src\main\resources\drawable-ldpi\ic_launcher.png
+* res\drawable-mdpi\icon.png => app\src\main\resources\drawable-mdpi\icon.png
+* res\drawable-nodpi\gallery_help.jpg => app\src\main\resources\drawable-nodpi\gallery_help.jpg
+* res\drawable-nodpi\galleryhelp.jpg => app\src\main\resources\drawable-nodpi\galleryhelp.jpg
+* res\drawable-nodpi\launcher_icon.png => app\src\main\resources\drawable-nodpi\launcher_icon.png
+* res\drawable-nodpi\share_via_barcode.png => app\src\main\resources\drawable-nodpi\share_via_barcode.png
+* res\drawable-nodpi\shopper_icon.png => app\src\main\resources\drawable-nodpi\shopper_icon.png
+* res\drawable-xhdpi\aim0.png => app\src\main\resources\drawable-xhdpi\aim0.png
+* res\drawable-xhdpi\aim0_.png => app\src\main\resources\drawable-xhdpi\aim0_.png
+* res\drawable-xhdpi\aim1.png => app\src\main\resources\drawable-xhdpi\aim1.png
+* res\drawable-xhdpi\aim2.png => app\src\main\resources\drawable-xhdpi\aim2.png
+* res\drawable-xhdpi\aim3.png => app\src\main\resources\drawable-xhdpi\aim3.png
+* res\drawable-xhdpi\aim_guide.png => app\src\main\resources\drawable-xhdpi\aim_guide.png
+* res\drawable-xhdpi\aimpitch.png => app\src\main\resources\drawable-xhdpi\aimpitch.png
+* res\drawable-xhdpi\battery.png => app\src\main\resources\drawable-xhdpi\battery.png
+* res\drawable-xhdpi\battery25.png => app\src\main\resources\drawable-xhdpi\battery25.png
+* res\drawable-xhdpi\battery50.png => app\src\main\resources\drawable-xhdpi\battery50.png
+* res\drawable-xhdpi\btn_check.png => app\src\main\resources\drawable-xhdpi\btn_check.png
+* res\drawable-xhdpi\btn_check_over.png => app\src\main\resources\drawable-xhdpi\btn_check_over.png
+* res\drawable-xhdpi\button_box0.9.png => app\src\main\resources\drawable-xhdpi\button_box0.9.png
+* res\drawable-xhdpi\button_box1.9.png => app\src\main\resources\drawable-xhdpi\button_box1.9.png
+* res\drawable-xhdpi\button_menubox0.9.png => app\src\main\resources\drawable-xhdpi\button_menubox0.9.png
+* res\drawable-xhdpi\button_menubox1.9.png => app\src\main\resources\drawable-xhdpi\button_menubox1.9.png
+* res\drawable-xhdpi\button_previewbox0.9.png => app\src\main\resources\drawable-xhdpi\button_previewbox0.9.png
+* res\drawable-xhdpi\button_previewbox1.9.png => app\src\main\resources\drawable-xhdpi\button_previewbox1.9.png
+* res\drawable-xhdpi\button_previewbox2.9.png => app\src\main\resources\drawable-xhdpi\button_previewbox2.9.png
+* res\drawable-xhdpi\button_roundbox0.9.png => app\src\main\resources\drawable-xhdpi\button_roundbox0.9.png
+* res\drawable-xhdpi\button_roundbox1.9.png => app\src\main\resources\drawable-xhdpi\button_roundbox1.9.png
+* res\drawable-xhdpi\button_rountbox0.9.png => app\src\main\resources\drawable-xhdpi\button_rountbox0.9.png
+* res\drawable-xhdpi\button_rountbox1.9.png => app\src\main\resources\drawable-xhdpi\button_rountbox1.9.png
+* res\drawable-xhdpi\camera_change.png => app\src\main\resources\drawable-xhdpi\camera_change.png
+* res\drawable-xhdpi\camera_upper_bg.png => app\src\main\resources\drawable-xhdpi\camera_upper_bg.png
+* res\drawable-xhdpi\check_off.png => app\src\main\resources\drawable-xhdpi\check_off.png
+* res\drawable-xhdpi\check_on.png => app\src\main\resources\drawable-xhdpi\check_on.png
+* res\drawable-xhdpi\cherry_filter1.png => app\src\main\resources\drawable-xhdpi\cherry_filter1.png
+* res\drawable-xhdpi\cherry_filter2.png => app\src\main\resources\drawable-xhdpi\cherry_filter2.png
+* res\drawable-xhdpi\cherry_filter3.png => app\src\main\resources\drawable-xhdpi\cherry_filter3.png
+* res\drawable-xhdpi\cherry_filter_icon0.png => app\src\main\resources\drawable-xhdpi\cherry_filter_icon0.png
+* res\drawable-xhdpi\cherry_filter_icon1.png => app\src\main\resources\drawable-xhdpi\cherry_filter_icon1.png
+* res\drawable-xhdpi\cherry_filter_icon2.png => app\src\main\resources\drawable-xhdpi\cherry_filter_icon2.png
+* res\drawable-xhdpi\cherry_filter_icon3.png => app\src\main\resources\drawable-xhdpi\cherry_filter_icon3.png
+* res\drawable-xhdpi\cherry_off.png => app\src\main\resources\drawable-xhdpi\cherry_off.png
+* res\drawable-xhdpi\cherry_on.png => app\src\main\resources\drawable-xhdpi\cherry_on.png
+* res\drawable-xhdpi\effect_other.png => app\src\main\resources\drawable-xhdpi\effect_other.png
+* res\drawable-xhdpi\exit.png => app\src\main\resources\drawable-xhdpi\exit.png
+* res\drawable-xhdpi\expo_seekbar.png => app\src\main\resources\drawable-xhdpi\expo_seekbar.png
+* res\drawable-xhdpi\expo_seekbtn.png => app\src\main\resources\drawable-xhdpi\expo_seekbtn.png
+* res\drawable-xhdpi\expo_seekbtn_on.png => app\src\main\resources\drawable-xhdpi\expo_seekbtn_on.png
+* res\drawable-xhdpi\exposure_dark_0.png => app\src\main\resources\drawable-xhdpi\exposure_dark_0.png
+* res\drawable-xhdpi\exposure_dark_1.png => app\src\main\resources\drawable-xhdpi\exposure_dark_1.png
+* res\drawable-xhdpi\exposure_light_0.png => app\src\main\resources\drawable-xhdpi\exposure_light_0.png
+* res\drawable-xhdpi\exposure_light_1.png => app\src\main\resources\drawable-xhdpi\exposure_light_1.png
+* res\drawable-xhdpi\flash_auto.png => app\src\main\resources\drawable-xhdpi\flash_auto.png
+* res\drawable-xhdpi\flash_off.png => app\src\main\resources\drawable-xhdpi\flash_off.png
+* res\drawable-xhdpi\flash_on.png => app\src\main\resources\drawable-xhdpi\flash_on.png
+* res\drawable-xhdpi\flash_redeye.png => app\src\main\resources\drawable-xhdpi\flash_redeye.png
+* res\drawable-xhdpi\flash_torch.png => app\src\main\resources\drawable-xhdpi\flash_torch.png
+* res\drawable-xhdpi\focus_auto.png => app\src\main\resources\drawable-xhdpi\focus_auto.png
+* res\drawable-xhdpi\focus_fix.png => app\src\main\resources\drawable-xhdpi\focus_fix.png
+* res\drawable-xhdpi\focus_infinity.png => app\src\main\resources\drawable-xhdpi\focus_infinity.png
+* res\drawable-xhdpi\focus_macro.png => app\src\main\resources\drawable-xhdpi\focus_macro.png
+* res\drawable-xhdpi\freemem.png => app\src\main\resources\drawable-xhdpi\freemem.png
+* res\drawable-xhdpi\fullimage.png => app\src\main\resources\drawable-xhdpi\fullimage.png
+* res\drawable-xhdpi\gallery.png => app\src\main\resources\drawable-xhdpi\gallery.png
+* res\drawable-xhdpi\gallery_board_bottom.9.png => app\src\main\resources\drawable-xhdpi\gallery_board_bottom.9.png
+* res\drawable-xhdpi\gallery_board_mid.9.png => app\src\main\resources\drawable-xhdpi\gallery_board_mid.9.png
+* res\drawable-xhdpi\gallery_board_top.9.png => app\src\main\resources\drawable-xhdpi\gallery_board_top.9.png
+* res\drawable-xhdpi\guideline.png => app\src\main\resources\drawable-xhdpi\guideline.png
+* res\drawable-xhdpi\help.png => app\src\main\resources\drawable-xhdpi\help.png
+* res\drawable-xhdpi\help0.png => app\src\main\resources\drawable-xhdpi\help0.png
+* res\drawable-xhdpi\ic_launcher.png => app\src\main\resources\drawable-xhdpi\ic_launcher.png
+* res\drawable-xhdpi\icon.png => app\src\main\resources\drawable-xhdpi\icon.png
+* res\drawable-xhdpi\icon_action.png => app\src\main\resources\drawable-xhdpi\icon_action.png
+* res\drawable-xhdpi\icon_auto.png => app\src\main\resources\drawable-xhdpi\icon_auto.png
+* res\drawable-xhdpi\icon_barcode.png => app\src\main\resources\drawable-xhdpi\icon_barcode.png
+* res\drawable-xhdpi\icon_beach.png => app\src\main\resources\drawable-xhdpi\icon_beach.png
+* res\drawable-xhdpi\icon_candlelight.png => app\src\main\resources\drawable-xhdpi\icon_candlelight.png
+* res\drawable-xhdpi\icon_default.png => app\src\main\resources\drawable-xhdpi\icon_default.png
+* res\drawable-xhdpi\icon_facing.png => app\src\main\resources\drawable-xhdpi\icon_facing.png
+* res\drawable-xhdpi\icon_fireworks.png => app\src\main\resources\drawable-xhdpi\icon_fireworks.png
+* res\drawable-xhdpi\icon_flowers.png => app\src\main\resources\drawable-xhdpi\icon_flowers.png
+* res\drawable-xhdpi\icon_hdr.png => app\src\main\resources\drawable-xhdpi\icon_hdr.png
+* res\drawable-xhdpi\icon_landscape.png => app\src\main\resources\drawable-xhdpi\icon_landscape.png
+* res\drawable-xhdpi\icon_night.png => app\src\main\resources\drawable-xhdpi\icon_night.png
+* res\drawable-xhdpi\icon_nightportrait.png => app\src\main\resources\drawable-xhdpi\icon_nightportrait.png
+* res\drawable-xhdpi\icon_party.png => app\src\main\resources\drawable-xhdpi\icon_party.png
+* res\drawable-xhdpi\icon_portrait.png => app\src\main\resources\drawable-xhdpi\icon_portrait.png
+* res\drawable-xhdpi\icon_snow.png => app\src\main\resources\drawable-xhdpi\icon_snow.png
+* res\drawable-xhdpi\icon_sports.png => app\src\main\resources\drawable-xhdpi\icon_sports.png
+* res\drawable-xhdpi\icon_steady.png => app\src\main\resources\drawable-xhdpi\icon_steady.png
+* res\drawable-xhdpi\icon_sunset.png => app\src\main\resources\drawable-xhdpi\icon_sunset.png
+* res\drawable-xhdpi\icon_theatre.png => app\src\main\resources\drawable-xhdpi\icon_theatre.png
+* res\drawable-xhdpi\info.png => app\src\main\resources\drawable-xhdpi\info.png
+* res\drawable-xhdpi\meminfo_bg.9.png => app\src\main\resources\drawable-xhdpi\meminfo_bg.9.png
+* res\drawable-xhdpi\meminfo_line.png => app\src\main\resources\drawable-xhdpi\meminfo_line.png
+* res\drawable-xhdpi\menu.png => app\src\main\resources\drawable-xhdpi\menu.png
+* res\drawable-xhdpi\menu_bg0.png => app\src\main\resources\drawable-xhdpi\menu_bg0.png
+* res\drawable-xhdpi\menu_bg1.png => app\src\main\resources\drawable-xhdpi\menu_bg1.png
+* res\drawable-xhdpi\menu_guide_bottom.png => app\src\main\resources\drawable-xhdpi\menu_guide_bottom.png
+* res\drawable-xhdpi\menu_guide_upper.png => app\src\main\resources\drawable-xhdpi\menu_guide_upper.png
+* res\drawable-xhdpi\menu_scnbutton.9.png => app\src\main\resources\drawable-xhdpi\menu_scnbutton.9.png
+* res\drawable-xhdpi\menu_scnbutton_click.9.png => app\src\main\resources\drawable-xhdpi\menu_scnbutton_click.9.png
+* res\drawable-xhdpi\menu_title.png => app\src\main\resources\drawable-xhdpi\menu_title.png
+* res\drawable-xhdpi\next.png => app\src\main\resources\drawable-xhdpi\next.png
+* res\drawable-xhdpi\option.png => app\src\main\resources\drawable-xhdpi\option.png
+* res\drawable-xhdpi\option_etc.png => app\src\main\resources\drawable-xhdpi\option_etc.png
+* res\drawable-xhdpi\picsize.png => app\src\main\resources\drawable-xhdpi\picsize.png
+* res\drawable-xhdpi\pitch.png => app\src\main\resources\drawable-xhdpi\pitch.png
+* res\drawable-xhdpi\prev.png => app\src\main\resources\drawable-xhdpi\prev.png
+* res\drawable-xhdpi\preview_save0.png => app\src\main\resources\drawable-xhdpi\preview_save0.png
+* res\drawable-xhdpi\preview_save1.png => app\src\main\resources\drawable-xhdpi\preview_save1.png
+* res\drawable-xhdpi\s_bluetooth_off.png => app\src\main\resources\drawable-xhdpi\s_bluetooth_off.png
+* res\drawable-xhdpi\s_bluetooth_on.png => app\src\main\resources\drawable-xhdpi\s_bluetooth_on.png
+* res\drawable-xhdpi\scene_action.png => app\src\main\resources\drawable-xhdpi\scene_action.png
+* res\drawable-xhdpi\scene_auto.png => app\src\main\resources\drawable-xhdpi\scene_auto.png
+* res\drawable-xhdpi\scene_barcode.png => app\src\main\resources\drawable-xhdpi\scene_barcode.png
+* res\drawable-xhdpi\scene_beach.png => app\src\main\resources\drawable-xhdpi\scene_beach.png
+* res\drawable-xhdpi\scene_candle.png => app\src\main\resources\drawable-xhdpi\scene_candle.png
+* res\drawable-xhdpi\scene_default.png => app\src\main\resources\drawable-xhdpi\scene_default.png
+* res\drawable-xhdpi\scene_fireworks.png => app\src\main\resources\drawable-xhdpi\scene_fireworks.png
+* res\drawable-xhdpi\scene_flower.png => app\src\main\resources\drawable-xhdpi\scene_flower.png
+* res\drawable-xhdpi\scene_landscape.png => app\src\main\resources\drawable-xhdpi\scene_landscape.png
+* res\drawable-xhdpi\scene_night.png => app\src\main\resources\drawable-xhdpi\scene_night.png
+* res\drawable-xhdpi\scene_nightportrait.png => app\src\main\resources\drawable-xhdpi\scene_nightportrait.png
+* res\drawable-xhdpi\scene_none.png => app\src\main\resources\drawable-xhdpi\scene_none.png
+* res\drawable-xhdpi\scene_party.png => app\src\main\resources\drawable-xhdpi\scene_party.png
+* res\drawable-xhdpi\scene_portrait.png => app\src\main\resources\drawable-xhdpi\scene_portrait.png
+* res\drawable-xhdpi\scene_snow.png => app\src\main\resources\drawable-xhdpi\scene_snow.png
+* res\drawable-xhdpi\scene_steady.png => app\src\main\resources\drawable-xhdpi\scene_steady.png
+* res\drawable-xhdpi\scene_sunset.png => app\src\main\resources\drawable-xhdpi\scene_sunset.png
+* res\drawable-xhdpi\scene_theatre.png => app\src\main\resources\drawable-xhdpi\scene_theatre.png
+* res\drawable-xhdpi\selectguide.png => app\src\main\resources\drawable-xhdpi\selectguide.png
+* res\drawable-xhdpi\share.png => app\src\main\resources\drawable-xhdpi\share.png
+* res\drawable-xhdpi\shutter.png => app\src\main\resources\drawable-xhdpi\shutter.png
+* res\drawable-xhdpi\shutter_.png => app\src\main\resources\drawable-xhdpi\shutter_.png
+* res\drawable-xhdpi\shutter_focus.png => app\src\main\resources\drawable-xhdpi\shutter_focus.png
+* res\drawable-xhdpi\shutter_normal.png => app\src\main\resources\drawable-xhdpi\shutter_normal.png
+* res\drawable-xhdpi\shutter_pressed.png => app\src\main\resources\drawable-xhdpi\shutter_pressed.png
+* res\drawable-xhdpi\thumb.png => app\src\main\resources\drawable-xhdpi\thumb.png
+* res\drawable-xhdpi\thumb_row.9.png => app\src\main\resources\drawable-xhdpi\thumb_row.9.png
+* res\drawable-xhdpi\thumb_row0.9.png => app\src\main\resources\drawable-xhdpi\thumb_row0.9.png
+* res\drawable-xhdpi\thumb_row_c.9.png => app\src\main\resources\drawable-xhdpi\thumb_row_c.9.png
+* res\drawable-xhdpi\timer.png => app\src\main\resources\drawable-xhdpi\timer.png
+* res\drawable-xhdpi\timer_10.png => app\src\main\resources\drawable-xhdpi\timer_10.png
+* res\drawable-xhdpi\timer_3.png => app\src\main\resources\drawable-xhdpi\timer_3.png
+* res\drawable-xhdpi\timer_30.png => app\src\main\resources\drawable-xhdpi\timer_30.png
+* res\drawable-xhdpi\timer_5.png => app\src\main\resources\drawable-xhdpi\timer_5.png
+* res\drawable-xhdpi\timer_sound.png => app\src\main\resources\drawable-xhdpi\timer_sound.png
+* res\drawable-xhdpi\title.png => app\src\main\resources\drawable-xhdpi\title.png
+* res\drawable-xhdpi\trash.png => app\src\main\resources\drawable-xhdpi\trash.png
+* res\drawable-xhdpi\wrong_file.png => app\src\main\resources\drawable-xhdpi\wrong_file.png
+* res\drawable-xhdpi\zoom_off.png => app\src\main\resources\drawable-xhdpi\zoom_off.png
+* res\drawable-xhdpi\zoom_on.png => app\src\main\resources\drawable-xhdpi\zoom_on.png
+* res\drawable-xxhdpi\cherry_01.png => app\src\main\resources\drawable-xxhdpi\cherry_01.png
+* res\drawable-xxhdpi\cherry_02.png => app\src\main\resources\drawable-xxhdpi\cherry_02.png
+* res\drawable-xxhdpi\cherry_03.png => app\src\main\resources\drawable-xxhdpi\cherry_03.png
+* res\drawable-xxhdpi\cherry_04.png => app\src\main\resources\drawable-xxhdpi\cherry_04.png
+* res\drawable-xxhdpi\cherry_05.png => app\src\main\resources\drawable-xxhdpi\cherry_05.png
+* res\drawable-xxhdpi\menu_button_01.png => app\src\main\resources\drawable-xxhdpi\menu_button_01.png
+* res\drawable-xxhdpi\menu_button_02.png => app\src\main\resources\drawable-xxhdpi\menu_button_02.png
+* res\drawable-xxhdpi\menu_flower_bottom.png => app\src\main\resources\drawable-xxhdpi\menu_flower_bottom.png
+* res\drawable-xxhdpi\menu_flower_upper.png => app\src\main\resources\drawable-xxhdpi\menu_flower_upper.png
+* res\drawable\grid_color_selector.xml => app\src\main\resources\drawable\grid_color_selector.xml
+* res\drawable\round_background0.xml => app\src\main\resources\drawable\round_background0.xml
+* res\drawable\round_background1.xml => app\src\main\resources\drawable\round_background1.xml
+* res\drawable\seekbar_custom_expo.xml => app\src\main\resources\drawable\seekbar_custom_expo.xml
+* res\drawable\seekbar_custom_expo_thum.xml => app\src\main\resources\drawable\seekbar_custom_expo_thum.xml
+* res\drawable\selector_boxbutton.xml => app\src\main\resources\drawable\selector_boxbutton.xml
+* res\drawable\selector_checkbox.xml => app\src\main\resources\drawable\selector_checkbox.xml
+* res\drawable\selector_cherryfilterbutton.xml => app\src\main\resources\drawable\selector_cherryfilterbutton.xml
+* res\drawable\selector_greybutton.xml => app\src\main\resources\drawable\selector_greybutton.xml
+* res\drawable\selector_greycheckbutton.xml => app\src\main\resources\drawable\selector_greycheckbutton.xml
+* res\drawable\selector_menu_boxbutton.xml => app\src\main\resources\drawable\selector_menu_boxbutton.xml
+* res\drawable\selector_menu_scnbutton.xml => app\src\main\resources\drawable\selector_menu_scnbutton.xml
+* res\drawable\selector_menu_tabbutton.xml => app\src\main\resources\drawable\selector_menu_tabbutton.xml
+* res\drawable\selector_roundbox.xml => app\src\main\resources\drawable\selector_roundbox.xml
+* res\drawable\selector_roundbox_button.xml => app\src\main\resources\drawable\selector_roundbox_button.xml
+* res\drawable\selector_seekbar_expo_thum.xml => app\src\main\resources\drawable\selector_seekbar_expo_thum.xml
+* res\drawable\selector_shutter_btn.xml => app\src\main\resources\drawable\selector_shutter_btn.xml
+* res\drawable\selector_thumb_checkbox.xml => app\src\main\resources\drawable\selector_thumb_checkbox.xml
+* res\drawable\slt_color_buttonselect.xml => app\src\main\resources\drawable\slt_color_buttonselect.xml
+* res\layout\alertdialog_meminfo.xml => app\src\main\resources\layout\alertdialog_meminfo.xml
+* res\layout\camera_bottom.xml => app\src\main\resources\layout\camera_bottom.xml
+* res\layout\camera_left.xml => app\src\main\resources\layout\camera_left.xml
+* res\layout\camera_option.xml => app\src\main\resources\layout\camera_option.xml
+* res\layout\camera_right.xml => app\src\main\resources\layout\camera_right.xml
+* res\layout\camera_upper.xml => app\src\main\resources\layout\camera_upper.xml
+* res\layout\capture.xml => app\src\main\resources\layout\capture.xml
+* res\layout\gallery_gridview_item.xml => app\src\main\resources\layout\gallery_gridview_item.xml
+* res\layout\gallery_listview_item1.xml => app\src\main\resources\layout\gallery_listview_item1.xml
+* res\layout\gallery_listview_layout.xml => app\src\main\resources\layout\gallery_listview_layout.xml
+* res\layout\gallery_picture_pageritem.xml => app\src\main\resources\layout\gallery_picture_pageritem.xml
+* res\layout\gallery_picturelayout.xml => app\src\main\resources\layout\gallery_picturelayout.xml
+* res\layout\gallery_thumblayout.xml => app\src\main\resources\layout\gallery_thumblayout.xml
+* res\layout\item_anim_flower.xml => app\src\main\resources\layout\item_anim_flower.xml
+* res\layout\list_picsize.xml => app\src\main\resources\layout\list_picsize.xml
+* res\layout\main.xml => app\src\main\resources\layout\main.xml
+* res\layout\main_camera.xml => app\src\main\resources\layout\main_camera.xml
+* res\layout\main_menu.xml => app\src\main\resources\layout\main_menu.xml
+* res\layout\menu_scn.xml => app\src\main\resources\layout\menu_scn.xml
+* res\layout\menu_scn_button.xml => app\src\main\resources\layout\menu_scn_button.xml
+* res\layout\option_filter.xml => app\src\main\resources\layout\option_filter.xml
+* res\layout\option_flash.xml => app\src\main\resources\layout\option_flash.xml
+* res\layout\option_focus.xml => app\src\main\resources\layout\option_focus.xml
+* res\layout\option_menu.xml => app\src\main\resources\layout\option_menu.xml
+* res\layout\option_timer.xml => app\src\main\resources\layout\option_timer.xml
+* res\layout\option_zoom.xml => app\src\main\resources\layout\option_zoom.xml
+* res\raw\beep.ogg => app\src\main\resources\raw\beep.ogg
+* res\raw\click.ogg => app\src\main\resources\raw\click.ogg
+* res\raw\focus.ogg => app\src\main\resources\raw\focus.ogg
+* res\values-hdpi\demens.xml => app\src\main\resources\values-hdpi\demens.xml
+* res\values-ja\strings.xml => app\src\main\resources\values-ja\strings.xml
+* res\values-ko\strings.xml => app\src\main\resources\values-ko\strings.xml
+* res\values-mdpi\demens.xml => app\src\main\resources\values-mdpi\demens.xml
+* res\values-xhdpi\demens.xml => app\src\main\resources\values-xhdpi\demens.xml
+* res\values\attrs.xml => app\src\main\resources\values\attrs.xml
+* res\values\colors.xml => app\src\main\resources\values\colors.xml
+* res\values\ids.xml => app\src\main\resources\values\ids.xml
+* res\values\pxtodp_1.xml => app\src\main\resources\values\pxtodp_1.xml
+* res\values\strings.xml => app\src\main\resources\values\strings.xml
+* res\values\style.xml => app\src\main\resources\values\style.xml
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

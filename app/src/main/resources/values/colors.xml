@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_ltgray">#bbbbbb</color>
+    <color name="color_dkgray">#444444</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_blue">#0000ff</color>
+    <color name="color_green">#00ff00</color>
+    <color name="color_shadow">#8e0f4e</color>
+    <color name="color_pink">#ffa1c0</color>
+    <color name="color_menu">#ffffff</color>
+    <color name="color_option_button">#b560768a</color>
+    <color name="color_option_bg">#b56c8ba6</color>
+    
+  <color name="contents_text">#ff000000</color>
+  <color name="encode_view">#ffffffff</color>
+  <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="transparent">#00000000</color>
+  <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+  <color name="viewfinder_mask">#60000000</color>
+  <color name="gallery_item_title">#535e79</color>
+  
+  <color name="alert_bg">#ebf6fe</color>
+</resources>
