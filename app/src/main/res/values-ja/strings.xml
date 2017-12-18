@@ -100,6 +100,7 @@
     <string name="alert_freememory_message1">空きメモリ</string>
     <string name="alert_freememory_message2">バッテリー</string>
     <string name="alert_freememory_message3">画面 解像度</string>
+    <string name="info_privacy">Privacy Info</string>
     
   <string name="qr_reader">バーコード</string>
   <string name="app_picker_name">アプリケーション</string>

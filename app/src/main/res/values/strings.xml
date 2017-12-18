@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Cherry Camera!</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8684079291236473/5227367033</string>
     <string name="upload_message">Hold on. please.</string>
     <string name="notmodemessage">Not support Mode</string>
     <string name="caution_lowdevice">caution low-end devices</string>
@@ -101,7 +102,8 @@
     <string name="alert_freememory_message1">Free Memory</string>
     <string name="alert_freememory_message2">Battery</string>
     <string name="alert_freememory_message3">Resolution</string>
-    
+    <string name="info_privacy">Privacy Info</string>
+
     <string name="camera_auto">auto</string>
     <string name="camera_manual">manual</string>
     

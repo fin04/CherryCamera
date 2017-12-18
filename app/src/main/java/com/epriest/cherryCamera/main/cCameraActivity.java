@@ -1,13 +1,5 @@
 package com.epriest.cherryCamera.main;
 
-import com.epriest.cherryCamera.ApplicationClass;
-import com.epriest.cherryCamera.R;
-import com.epriest.cherryCamera.util.IN;
-import com.epriest.cherryCamera.util.ccCamUtil;
-import com.epriest.cherryCamera.util.ccPicUtil;
-import com.epriest.cherryCamera.util.logline;
-
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -15,21 +7,33 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
 import android.graphics.Matrix;
+import android.graphics.Point;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffColorFilter;
+import android.graphics.Rect;
+import android.hardware.Camera.Area;
 import android.media.ExifInterface;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.OrientationEventListener;
-import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
+
+import com.epriest.cherryCamera.ApplicationClass;
+import com.epriest.cherryCamera.R;
+import com.epriest.cherryCamera.util.IN;
+import com.epriest.cherryCamera.util.ccCamUtil;
+import com.epriest.cherryCamera.util.ccPicUtil;
+import com.epriest.cherryCamera.util.logline;
+
+import java.util.ArrayList;
 
 /**
  * @author Camera Activity
@@ -101,6 +105,11 @@ public class cCameraActivity extends Activity{
     	ivPitchOn = (ImageView)findViewById(R.id.camera_preview_pitch_on);
 //        drawView = new cCameraPreviewDraw(this, app);
 //        preview.addView(drawView);
+
+		/*LayoutParams layoutParamsDrawing
+				= new LayoutParams(LayoutParams.FILL_PARENT,
+				LayoutParams.FILL_PARENT);
+		this.addContentView(appClass.mPreview.drawView, layoutParamsDrawing);*/
 	}
 		
     /*private void hiddenSoftkey(){
@@ -231,11 +240,20 @@ public class cCameraActivity extends Activity{
 //        	   app.vf.setOutAnimation(ccUtil.outToRightAnimation());
 //        	   app.vf.showNext();
 //           }
-           
            if (appClass.openOption != IN.MODE_OPENMENU_CLOSE && oldTouchValue > currentX){
         	   appClass.mMenuset.openOptionClose();
-           }
-           break;	        
+           }else{
+			   return true;
+			   /*ImageView focusArea = (ImageView)findViewById(R.id.camera_preview_focusarea);
+			   appClass.mPreview.takeAutoFocusArea(focusArea, touchevent.getX(), touchevent.getY(), new Point(appClass.lcdWidth, appClass.lcdHeight));
+			   if (appClass.mPreview.mFocusArea == null) {
+				   appClass.mPreview.mFocusArea = new ArrayList<Area>();
+				   appClass.mPreview.mFocusArea.add(new Area(new Rect(), 1));
+			   }
+
+			   appClass.mPreview.mCamera.autoFocus(appClass.mPreview.mFocusCallback);*/
+		   }
+           break;
 		 }
 		return true;
 	}

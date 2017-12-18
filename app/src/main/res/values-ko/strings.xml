@@ -101,6 +101,7 @@
     <string name="alert_freememory_message1">남은 저장공간</string>
     <string name="alert_freememory_message2">배터리</string>
     <string name="alert_freememory_message3">화면 해상도</string>
+    <string name="info_privacy">개인정보처리방침</string>
 
   <string name="qr_reader">바코드리더</string>
   <string name="app_picker_name">어플리케이션</string>

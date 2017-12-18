@@ -13,7 +13,7 @@ import com.epriest.cherryCamera.util.IN;
 import com.epriest.cherryCamera.util.ccCamUtil;
 import com.epriest.cherryCamera.util.ccPicUtil;
 import com.epriest.cherryCamera.util.logline;
-import com.google.zxing.client.android.integration.IntentIntegrator;
+import com.google.zxing.integration.android.IntentIntegrator;
 
 import android.app.Activity;
 import android.content.Context;
@@ -107,7 +107,7 @@ public class ccMenuset{
 			sceneList = new ArrayList<String>();
 			for(int i=0; i<4; i++){
 				sceneList.add(IN.menuScnString[i]);
-			}			
+			}
 		}else{
 			sceneList.add(1, IN.CAMERA_FACING);
 		}
@@ -115,9 +115,9 @@ public class ccMenuset{
 		GridLayout gl = (GridLayout)mActivity.findViewById(R.id.scn_gridlayout);
         LayoutInflater m_inflater = (LayoutInflater) mActivity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-		for(int i=0; i< IN.menuScnString.length; i++){			
+		for(int i=0; i< IN.menuScnString.length; i++){
     		for(int j=0; j<sceneList.size() ; j++){
-    			String scnStr = sceneList.get(j).trim(); 
+    			String scnStr = sceneList.get(j).trim();
     			if(scnStr.contains(IN.SCENE_ACTION))
     				scnStr = IN.SCENE_SPORTS;
     			if(scnStr.contains(IN.SCENE_CANDLELIGHT))
@@ -128,7 +128,7 @@ public class ccMenuset{
     				final View row = m_inflater.inflate(R.layout.menu_scn_button, null);
     				FrameLayout listFormLayout = (FrameLayout)row.findViewById(R.id.scnMenuLayout);
     				listFormLayout.setTag(i);
-    				listFormLayout.setId(4);
+//    				listFormLayout.setId(4);
     				final int iCnt = i;
     				
     				ImageView iv = (ImageView)row.findViewById(R.id.menu_image);
@@ -140,10 +140,17 @@ public class ccMenuset{
     				btn.setOnClickListener(new View.OnClickListener() {
     					
     					@Override
-    					public void onClick(View v) {    						
-    						if(IN.menuScnString[iCnt].contains(IN.SCENE_BARCODE))
-    							IntentIntegrator.initiateScan(mActivity);
-    						else
+    					public void onClick(View v) {
+    						if(IN.menuScnString[iCnt].contains(IN.SCENE_BARCODE)) {
+//    							IntentIntegrator.initiateScan(mActivity);
+								IntentIntegrator integrator = new IntentIntegrator(mActivity);
+								integrator.setDesiredBarcodeFormats(IntentIntegrator.ONE_D_CODE_TYPES);
+								integrator.setPrompt("Scan a barcode");
+								integrator.setCameraId(0);  // Use a specific camera of the device
+								integrator.setBeepEnabled(false);
+								integrator.setBarcodeImageEnabled(true);
+								integrator.initiateScan();
+							}else
     							setSceneIntent(IN.menuScnString[iCnt]);
     					}
     				});

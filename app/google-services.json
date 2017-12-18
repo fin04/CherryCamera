@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "943772596773",
+    "firebase_url": "https://cherry-camera.firebaseio.com",
+    "project_id": "cherry-camera",
+    "storage_bucket": "cherry-camera.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943772596773:android:9ada51b8a3dc491c",
+        "android_client_info": {
+          "package_name": "com.epriest.cherryCamera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943772596773-bgdrt0b35d9sir9ivckjr7o7nqjj17hh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwXBQs9pvSjIBlXEVJ_peEs_fdozMctPw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

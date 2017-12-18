@@ -26,8 +26,16 @@
         android:visibility="invisible" >
 
     </FrameLayout>
-    
-    <LinearLayout
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8684079291236473/5227367033">
+    </com.google.android.gms.ads.AdView>
+    <!--<LinearLayout
         xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
         android:id="@+id/adlayout"
         android:layout_width="@dimen/BANNER_WIDTH"
@@ -40,11 +48,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-8684079291236473/6177389032"
+            ads:adUnitId="ca-app-pub-8684079291236473/5227367033"
             ads:loadAdOnCreate="true"
             ads:testDevices="TEST_EMULATOR, F51F2A6C4A6290BDB0C711BAE2697457, 7763B915C09B3BF4C69010EE31F744D6" >
         </com.google.ads.AdView>
-    </LinearLayout>
+    </LinearLayout>-->
 
     <FrameLayout
         android:id="@+id/layoutFlowerAnim"

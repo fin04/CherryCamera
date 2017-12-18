@@ -1,7 +1,11 @@
 package com.epriest.cherryCamera.main;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import android.graphics.Matrix;
+import android.graphics.Rect;
+import android.graphics.RectF;
 import android.hardware.Camera;
 import android.hardware.Camera.Parameters;
 import android.hardware.Camera.Size;
@@ -14,6 +18,8 @@ import com.epriest.cherryCamera.ApplicationClass;
 import com.epriest.cherryCamera.R;
 import com.epriest.cherryCamera.util.IN;
 import com.epriest.cherryCamera.util.ccCamUtil;
+import com.epriest.cherryCamera.util.ccUtil;
+import com.epriest.cherryCamera.util.ccUtil2;
 import com.epriest.cherryCamera.util.logline;
 /**
  * @author Camera Parameters setting
@@ -133,6 +139,29 @@ public class cCameraParameters {
 		mFilterSave.setLayoutParams(new FrameLayout.LayoutParams(
 				(int)appClass.mPreview.previewW-px, (int)appClass.mPreview.previewH-py, Gravity.CENTER));
 	}
+
+	/*public Parameters setAreaFocus(Parameters params){
+		if(!ccUtil.isSupported(Parameters.FOCUS_MODE_AUTO, appClass.ListFocus))
+			return params;
+
+		if(params.getMaxNumFocusAreas() >0){
+			List<Camera.Area> focusAreas = new ArrayList<Camera.Area>();
+			Rect areaRect1 = new Rect(-100, -100, 100, 100);    // specify an area in center of image
+			focusAreas.add(new Camera.Area(areaRect1, 600)); // set weight to 40%
+			Rect areaRect2 = new Rect(800, -1000, 1000, -800);  // specify an area in upper right of image
+			focusAreas.add(new Camera.Area(areaRect2, 400)); // set weight to 40%
+			params.setFocusAreas(focusAreas);
+		}
+//		if (params.getMaxNumMeteringAreas() > 0){ // check that metering areas are supported
+//			List<Camera.Area> meteringAreas = new ArrayList<Camera.Area>();
+//			Rect areaRect1 = new Rect(-100, -100, 100, 100);    // specify an area in center of image
+//			meteringAreas.add(new Camera.Area(areaRect1, 600)); // set weight to 60%
+//			Rect areaRect2 = new Rect(800, -1000, 1000, -800);  // specify an area in upper right of image
+//			meteringAreas.add(new Camera.Area(areaRect2, 400)); // set weight to 40%
+//			params.setMeteringAreas(meteringAreas);
+//		}
+		return params;
+	}*/
 
 	public Parameters whiteBalance(Parameters params){
 		appClass.ListWhiteBalance = params.getSupportedWhiteBalance();

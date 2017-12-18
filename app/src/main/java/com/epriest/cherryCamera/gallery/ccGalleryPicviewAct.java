@@ -10,6 +10,9 @@ import com.epriest.cherryCamera.util.ccPicUtil;
 import com.epriest.cherryCamera.util.ccPicUtil.BitmapInfo;
 import com.epriest.cherryCamera.util.ccUtil;
 import com.epriest.cherryCamera.util.logline;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -48,7 +51,17 @@ implements OnClickListener, OnCheckedChangeListener{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gallery_picturelayout);  
+        setContentView(R.layout.gallery_picturelayout);
+
+		MobileAds.initialize(getApplicationContext(), getString(R.string.banner_ad_unit_id));
+		AdView mAdView = (AdView) findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder()
+				.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)        // All emulators
+//				.addTestDevice("F51F2A6C4A6290BDB0C711BAE2697457")
+//				.addTestDevice("7763B915C09B3BF4C69010EE31F744D6")
+				.build();
+		mAdView.loadAd(adRequest);
+
         Intent i = getIntent();
 		if(i != null){
 			currentPhotoPos = i.getIntExtra("pos", 0);

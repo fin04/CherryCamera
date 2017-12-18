@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_black" >
@@ -22,25 +23,14 @@
         android:src="@drawable/gallery_help"
         android:visibility="invisible" />
 
-    <LinearLayout
-        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
-        android:id="@+id/adlayout"
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:orientation="vertical" >
-
-        <com.google.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="@dimen/BANNER_WIDTH"
-            android:layout_height="@dimen/BANNER_HEIGHT"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-8684079291236473/6177389032"
-            ads:loadAdOnCreate="true"
-            ads:testDevices="TEST_EMULATOR, F51F2A6C4A6290BDB0C711BAE2697457" >
-        </com.google.ads.AdView>
-    </LinearLayout>
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
 
     <LinearLayout
         android:id="@+id/buttonLayout1"

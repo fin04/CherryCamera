@@ -24,6 +24,9 @@ import com.epriest.cherryCamera.R;
 import com.epriest.cherryCamera.gallery.ccPhotoInfo.PhotoItem;
 import com.epriest.cherryCamera.util.ccPicUtil;
 import com.epriest.cherryCamera.util.ccCamUtil;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -44,7 +47,16 @@ public class ccGalleryGridLoader extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gallery_thumblayout);
-		
+
+		MobileAds.initialize(getApplicationContext(), getString(R.string.banner_ad_unit_id));
+		AdView mAdView = (AdView) findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder()
+				.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)        // All emulators
+//				.addTestDevice("F51F2A6C4A6290BDB0C711BAE2697457")
+//				.addTestDevice("7763B915C09B3BF4C69010EE31F744D6")
+				.build();
+		mAdView.loadAd(adRequest);
+
 		DisplayMetrics displayMetrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 		lcdWidth = displayMetrics.widthPixels;

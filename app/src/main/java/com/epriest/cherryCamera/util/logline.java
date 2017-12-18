@@ -6,7 +6,7 @@ import android.content.Context;
 import android.util.Log;
 
 public class logline {
-	static boolean isLog = false;//BuildConfig.DEBUG;
+	static boolean isLog = true;//BuildConfig.DEBUG;
 	public static void d(String str){		
 		if (isLog)
 			Log.d(IN.TAG, str);

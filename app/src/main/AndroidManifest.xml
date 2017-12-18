@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.epriest.cherryCamera"
-    android:versionCode="1215"
-    android:versionName="v.1.43" android:installLocation="internalOnly">
+	android:installLocation="internalOnly">
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -34,7 +33,7 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
             android:name=".ccActivity" 
-            android:screenOrientation="landscape" 
+            android:screenOrientation="sensorLandscape"
             android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
@@ -51,15 +50,15 @@
         </receiver> -->
         
        		<!-- The application's publisher ID assigned by AdMob -->
-     	<activity android:name="com.google.ads.AdActivity" 
+     	<!--<activity android:name="com.google.ads.AdActivity"
 		    android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
-		</activity>
-		<!-- <meta-data android:name="com.google.android.gms.version"
+		</activity>-->
+		 <meta-data android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         The application's publisher ID assigned by AdMob
 		<activity android:name="com.google.android.gms.ads.AdActivity"
              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-             android:theme="@android:style/Theme.Translucent"/> -->
+             android:theme="@android:style/Theme.Translucent"/>
 		
 		<activity android:name="com.epriest.cherryCamera.main.cCameraActivity" 
 		    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
@@ -73,23 +72,12 @@
 		    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
 		    android:configChanges="keyboardHidden|orientation|screenSize" 
 		    android:hardwareAccelerated="true" android:screenOrientation="portrait">
-		</activity>	
-		<activity
-		  android:name="com.google.zxing.client.android.CaptureActivity"
-		  android:screenOrientation="landscape"
-		  android:configChanges="orientation|keyboardHidden"
-		  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-		  android:windowSoftInputMode="stateAlwaysHidden">
-		    <intent-filter>
-		      <action android:name="com.google.zxing.client.android.SCAN"/>
-		      <category android:name="android.intent.category.DEFAULT"/>
-		    </intent-filter>
 		</activity>
 		<activity android:name=".gallery.ccGalleryPicviewAct"
-		    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
-		    android:configChanges="keyboardHidden|orientation|screenSize" 
-		    android:hardwareAccelerated="true" android:screenOrientation="portrait">
-		</activity>	
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:hardwareAccelerated="true" android:screenOrientation="portrait">
+		</activity>
     </application>
 
 </manifest>

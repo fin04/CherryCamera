@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/menu_layout_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,8 +27,8 @@
         android:visibility="invisible" >
 
     </FrameLayout>
-    
-    <LinearLayout
+
+    <!--<LinearLayout
         xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
         android:id="@+id/adlayout"
         android:layout_width="@dimen/BANNER_WIDTH"
@@ -44,7 +45,7 @@
             ads:loadAdOnCreate="true"
             ads:testDevices="TEST_EMULATOR, F51F2A6C4A6290BDB0C711BAE2697457, 7763B915C09B3BF4C69010EE31F744D6" >
         </com.google.ads.AdView>
-    </LinearLayout>
+    </LinearLayout>-->
 
     <FrameLayout
         android:id="@+id/layoutFlowerAnim"
@@ -376,7 +377,7 @@
             <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2" >
+                android:layout_weight="2">
 
                 <GridLayout
                     android:id="@+id/scn_gridlayout"
@@ -387,8 +388,7 @@
                     android:paddingLeft="20dp"
                     android:paddingRight="10dp"
                     android:paddingTop="10dp"
-                    android:rowCount="3" >
-                </GridLayout>
+                    android:rowCount="3"></GridLayout>
 
             </FrameLayout>
 
@@ -417,8 +417,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:orientation="vertical"
+        android:layout_gravity="center_vertical"
         android:paddingLeft="10dp"
-        android:paddingTop="10dp" >
+        android:paddingBottom="30dp" >
 
         <ImageView
             android:id="@+id/menu_image_title"
@@ -436,6 +437,27 @@
             android:textSize="@dimen/FONTSIZE_Biggest"
             android:textStyle="bold"
             android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_appinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="@dimen/FONTSIZE_Biggest"
+            android:text="@string/info_privacy"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/FONTSIZE_Normal"
+            android:textStyle="bold" />
     </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
 
 </FrameLayout>

@@ -2,6 +2,7 @@ package com.epriest.cherryCamera.util;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import android.app.Activity;
@@ -214,16 +215,16 @@ public class ccUtil {
 		try{    
             String[] projection = new String[]{ContactsContract.Data.RAW_CONTACT_ID,ContactsContract.Data.DATA1};  
             String selection = "mimetype='vnd.android.cursor.item/contact_event' and data2='3'";  
-            Cursor cur = con.getContentResolver().query(ContactsContract.Data.CONTENT_URI, projection, selection, null, null);   
-            if(cur!=null){  
-                while(cur.moveToNext()){  
-                    if(cur.getString(cur.getColumnIndex(ContactsContract.Data.DATA1))!=null){  
-                        String birthday = cur.getString(cur.getColumnIndex(ContactsContract.Data.DATA1));  
+            Cursor cur = con.getContentResolver().query(ContactsContract.Data.CONTENT_URI, projection, selection, null, null);
+            if(cur!=null){
+                while(cur.moveToNext()){
+                    if(cur.getString(cur.getColumnIndex(ContactsContract.Data.DATA1))!=null){
+                        String birthday = cur.getString(cur.getColumnIndex(ContactsContract.Data.DATA1));
                         String  row_id = cur.getString(cur.getColumnIndex(ContactsContract.Data.RAW_CONTACT_ID));
                         birthdayArrayList.add(AddContactList(con, birthday, row_id)); 
                     }  
                 }  
-            }  
+            }
             cur.close();
             return birthdayArrayList;
         } catch (Exception e) {      
@@ -307,5 +308,9 @@ public class ccUtil {
 			break;
 		}
 		return false;
+	}
+
+	public static boolean isSupported(String value, List<String> supported) {
+		return supported == null ? false : supported.indexOf(value) >= 0;
 	}
 }

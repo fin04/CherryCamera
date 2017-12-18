@@ -34,6 +34,9 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
+
+import java.security.Policy;
+
 /**
  * @author Main Menu Setting
  *
@@ -635,12 +638,12 @@ public class cCameraMenuSet implements OnClickListener, RadioGroup.OnCheckedChan
 				ImageView ivCameraShutter = (ImageView)appClass.getActivity().findViewById(R.id.img_camera_shutter_icon);
 				ivCameraShutter.setImageResource(R.drawable.shutter);
 			}else{
-				if(appClass.ListFocus == null || 
+				if(appClass.ListFocus == null ||
 						params.getFocusMode().equals(Parameters.FOCUS_MODE_FIXED)){}else{
 //					focusAim.setImageResource(R.drawable.aim2);
 					focusAim.setVisibility(View.VISIBLE);
 					appClass.mPreview.mCamera.autoFocus(appClass.mPreview.mFocusCallback);
-				}						
+				}
 			}
 			break;
 		}
@@ -665,7 +668,7 @@ public class cCameraMenuSet implements OnClickListener, RadioGroup.OnCheckedChan
 		float freemem = Float.parseFloat(arr[0]);
 		float maxmem = Float.parseFloat(arr[1]);
 		if(freemem < maxmem/20)
-			memLine.setBackgroundColor(R.color.color_red);
+			memLine.setBackgroundColor(appClass.getResources().getColor(R.color.color_red));
 		android.view.ViewGroup.LayoutParams params1 = memLine.getLayoutParams();
 		params1.width = (int) (memLineBg.getLayoutParams().width*freemem/maxmem);
 		memLine.setLayoutParams(params1);
@@ -683,7 +686,7 @@ public class cCameraMenuSet implements OnClickListener, RadioGroup.OnCheckedChan
 		int value = Integer.parseInt(batteryStr.replace("%", ""));
 		android.view.ViewGroup.LayoutParams params = batteryLine.getLayoutParams();
 		if(value < 20)
-			batteryLine.setBackgroundColor(R.color.color_red);
+			batteryLine.setBackgroundColor(appClass.getResources().getColor(R.color.color_red));
 		params.width = batteryLineBg.getLayoutParams().width*value/100;
 		batteryLine.setLayoutParams(params);
 		txtBattery.setText(batteryStr+"("+btn.getTag()+")");
