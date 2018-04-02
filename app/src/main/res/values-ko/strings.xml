@@ -14,6 +14,7 @@
     <string name="cannot_camera">카메라에 연결할 수 없습니다. (기기를 재부팅해 보십시요.)</string>
 	<string name="change_resolution">사진크기를 변경</string>
 	<string name="file_delete_success">파일이 삭제되었습니다.</string>
+    <string name="permission_denied">앱에 필요한 권한을 허락하지 않으면 앱을 사용할 수 없습니다.</string>
 	
     <string name="frontcamera">전면카메라</string>
     

@@ -1,17 +1,25 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'epriest'
+            keyPassword 'today004'
+            storeFile file('F:/project/Project epriest/android_signed_key')
+            storePassword 'today004'
+        }
+    }
     compileSdkVersion 26
     buildToolsVersion '27.0.1'
     defaultConfig {
         applicationId "com.epriest.cherryCamera"
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 26
     }
     buildTypes {
         release {
-            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.config
         }
     }
     productFlavors {
@@ -23,6 +31,5 @@ dependencies {
     compile 'com.google.firebase:firebase-ads:10.0.1'
     compile 'com.android.support:support-v4:26.0.0-alpha1'
     compile 'com.journeyapps:zxing-android-embedded:3.5.0'
-
 }
 apply plugin: 'com.google.gms.google-services'

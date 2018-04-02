@@ -101,6 +101,7 @@
     <string name="alert_freememory_message2">バッテリー</string>
     <string name="alert_freememory_message3">画面 解像度</string>
     <string name="info_privacy">Privacy Info</string>
+    <string name="permission_denied">アプリに許可を与えないと、そのアプリを使用できなくなります。</string>
     
   <string name="qr_reader">バーコード</string>
   <string name="app_picker_name">アプリケーション</string>

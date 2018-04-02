@@ -103,6 +103,7 @@
     <string name="alert_freememory_message2">Battery</string>
     <string name="alert_freememory_message3">Resolution</string>
     <string name="info_privacy">Privacy Info</string>
+    <string name="permission_denied">If you do not give permission to the app, you will not be able to use it.</string>
 
     <string name="camera_auto">auto</string>
     <string name="camera_manual">manual</string>

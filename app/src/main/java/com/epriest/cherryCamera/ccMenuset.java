@@ -144,7 +144,7 @@ public class ccMenuset{
     						if(IN.menuScnString[iCnt].contains(IN.SCENE_BARCODE)) {
 //    							IntentIntegrator.initiateScan(mActivity);
 								IntentIntegrator integrator = new IntentIntegrator(mActivity);
-								integrator.setDesiredBarcodeFormats(IntentIntegrator.ONE_D_CODE_TYPES);
+								integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
 								integrator.setPrompt("Scan a barcode");
 								integrator.setCameraId(0);  // Use a specific camera of the device
 								integrator.setBeepEnabled(false);
