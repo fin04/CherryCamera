@@ -4,16 +4,21 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.SearchManager;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.os.IBinder;
 import android.os.Process;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -33,6 +38,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.epriest.cherryCamera.main.MediaPlayerService;
 import com.epriest.cherryCamera.util.ccCamUtil;
 import com.epriest.cherryCamera.util.ccEffectBlur;
 import com.epriest.cherryCamera.util.ccPicUtil;
@@ -61,6 +67,9 @@ public class ccActivity extends Activity implements OnClickListener {
     private String intentGetAction;
 
     private ccMenuset mSet;
+    //    private MediaPlayer mediaPlayer;
+    private MediaPlayerService player;
+    boolean serviceBound = false;
 
     private final int REQUEST_ACCESS_CAMERA_PERMISSION = 122;
 
@@ -71,15 +80,15 @@ public class ccActivity extends Activity implements OnClickListener {
         logline.d(TAG, "==onCreate==");
 
         // permission set
-        if (!isGrantedPermission(Manifest.permission.CAMERA) ||
-                !isGrantedPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+        if (isGrantedPermission(Manifest.permission.CAMERA) &&
+                isGrantedPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+            setCreate();
+        } else {
 //			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE},
                     REQUEST_ACCESS_CAMERA_PERMISSION);
 //			}
-        }else{
-            setCreate();
         }
     }
 
@@ -133,7 +142,8 @@ public class ccActivity extends Activity implements OnClickListener {
         mAdView.loadAd(adRequest);
 
 //        Animation_Flowers();
-//        mBlurHandler = new Handler();
+//        mediaPlayer = MediaPlayer.create(this, R.raw.river_flows_in_you);
+        mBlurHandler = new Handler();
 //        menuSetBlur();
 
         // privacy info
@@ -181,6 +191,49 @@ public class ccActivity extends Activity implements OnClickListener {
         }
     }
 
+    //Binding this Client to the AudioPlayer Service
+    private ServiceConnection serviceConnection = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            // We've bound to LocalService, cast the IBinder and get LocalService instance
+            MediaPlayerService.LocalBinder binder = (MediaPlayerService.LocalBinder) service;
+            player = binder.getService();
+            serviceBound = true;
+
+            Toast.makeText(ccActivity.this, "Service Bound", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+            serviceBound = false;
+        }
+    };
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putBoolean("ServiceState", serviceBound);
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        serviceBound = savedInstanceState.getBoolean("ServiceState");
+    }
+
+    private void playAudio(String media) {
+        //Check is service is active
+        if (!serviceBound) {
+            Intent playerIntent = new Intent(this, MediaPlayerService.class);
+            playerIntent.putExtra("media", media);
+            startService(playerIntent);
+            bindService(playerIntent, serviceConnection, Context.BIND_AUTO_CREATE);
+        } else {
+            //Service is active
+            //Send media with BroadcastReceiver
+        }
+    }
+
     private Handler mBlurHandler;
     private Runnable mRunnable;
 
@@ -188,8 +241,10 @@ public class ccActivity extends Activity implements OnClickListener {
         mRunnable = new Runnable() {
             @Override
             public void run() {
+                findViewById(R.id.adView).setVisibility(View.INVISIBLE);
                 Animation_Fadeout();
-
+                Animation_Flowers();
+                playMedia();
             }
         };
     }
@@ -313,12 +368,26 @@ public class ccActivity extends Activity implements OnClickListener {
     }
 
     private void removeBlur() {
+        stopMedia();
+        findViewById(R.id.adView).setVisibility(View.VISIBLE);
         if (mBlurHandler != null)
             mBlurHandler.removeCallbacks(mRunnable);
         recycleView(findViewById(R.id.blurBg_fade));
         recycleView(findViewById(R.id.blurBg));
         findViewById(R.id.scn_gridlayout).setVisibility(View.VISIBLE);
         findViewById(R.id.btnGallery).setVisibility(View.VISIBLE);
+    }
+
+    private void playMedia() {
+        playAudio("river_flows_in_you.mp3");
+    }
+
+    private void stopMedia() {
+        if (serviceBound) {
+            unbindService(serviceConnection);
+            //service is active
+            player.stopSelf();
+        }
     }
 
     private void recycleView(View view) {
@@ -335,7 +404,7 @@ public class ccActivity extends Activity implements OnClickListener {
     @Override
     protected void onResume() {
         logline.d(TAG, "==onResume==");
-        startBlur();
+//        startBlur();
 //		app.menuBgimageLoad();
 //		if (adView != null) {
 //			adView.resume();
@@ -352,7 +421,7 @@ public class ccActivity extends Activity implements OnClickListener {
 //		if (adView != null) {
 //			adView.pause();
 //		}
-        removeBlur();
+//        removeBlur();
         super.onPause();
     }
 
@@ -462,7 +531,7 @@ public class ccActivity extends Activity implements OnClickListener {
     @Override
     protected void onDestroy() {
         logline.d(TAG, "==onDestroy==");
-        removeBlur();
+//        removeBlur();
 //		if(!intentGetAction.contains("IMAGE_CAPTURE"))
 //		if (adView != null)
 //			adView.destroy();

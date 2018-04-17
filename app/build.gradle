@@ -1,25 +1,38 @@
 apply plugin: 'com.android.application'
 
+def keystorePropertiesFile = rootProject.file("keystore.properties");
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
     signingConfigs {
-        config {
+        release {
             keyAlias 'epriest'
-            keyPassword 'today004'
-            storeFile file('F:/project/Project epriest/android_signed_key')
-            storePassword 'today004'
+            keyPassword 'today004A'
+            storeFile file('F:/project/androidStudio/android_signed_key')
+            storePassword 'today004A'
         }
     }
     compileSdkVersion 26
-    buildToolsVersion '27.0.1'
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.epriest.cherryCamera"
         minSdkVersion 14
         targetSdkVersion 26
+        versionCode 1217
+        versionName '1.4.5.0'
     }
     buildTypes {
         release {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-            signingConfig signingConfigs.config
+            signingConfig signingConfigs.release
+            debuggable false
+            minifyEnabled false
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            signingConfig
         }
     }
     productFlavors {

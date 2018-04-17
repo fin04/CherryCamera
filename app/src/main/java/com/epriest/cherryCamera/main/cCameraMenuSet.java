@@ -590,7 +590,11 @@ public class cCameraMenuSet implements OnClickListener, RadioGroup.OnCheckedChan
 			
 		//menu right
 		case R.id.btn_camera_scene:
-			cameraSceneList(params);
+			if(appClass.ListScene == null){
+				appClass.getActivity().finish();
+			}else {
+				cameraSceneList(params);
+			}
 			break;
 		case R.id.btn_camera_shutter:
 			if(appClass.openOption != IN.MODE_OPENMENU_CLOSE){
