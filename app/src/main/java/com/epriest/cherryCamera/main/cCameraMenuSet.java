@@ -176,6 +176,8 @@ public class cCameraMenuSet implements OnClickListener, RadioGroup.OnCheckedChan
 		if(appClass.ListFlashMode == null){
 			FrameLayout fl = (FrameLayout)appClass.getActivity().findViewById(R.id.optionmenu_flash);
 			fl.setVisibility(View.GONE);
+			ImageView iv = (ImageView) appClass.getActivity().findViewById(R.id.icon_camera_flash);
+			iv.setVisibility(View.GONE);
 		}else{
 			flash_rg = (RadioGroup)appClass.getActivity().findViewById(R.id.radioGroup_flash);
 			if(!appClass.ListFlashMode.contains(Parameters.FLASH_MODE_AUTO))flash_rg.removeViewInLayout(appClass.getActivity().findViewById(R.id.flash_radio0));
@@ -189,6 +191,8 @@ public class cCameraMenuSet implements OnClickListener, RadioGroup.OnCheckedChan
 		if(appClass.ListFocus == null){
 			FrameLayout fl = (FrameLayout)appClass.getActivity().findViewById(R.id.optionmenu_focus);
 			fl.setVisibility(View.GONE);
+			ImageView iv = (ImageView) appClass.getActivity().findViewById(R.id.icon_camera_focus);
+			iv.setVisibility(View.GONE);
 		}else{
 			focus_rg = (RadioGroup)appClass.getActivity().findViewById(R.id.radioGroup_focus);
 			if(!appClass.ListFocus.contains(Parameters.FOCUS_MODE_AUTO))focus_rg.removeViewInLayout(appClass.getActivity().findViewById(R.id.focus_radio0));

@@ -1,0 +1,19 @@
+1.4.5.0
+<en-US>
+Authority check on the device of Android.M or higher
+Fix barcode reader error
+Other usability improvements
+</en-US>
+
+<ja-JP>
+マシュマロ以上の機器での権限チェック
+バーコードリーダーのエラーを修正
+その他の使いやすさの改善
+</ja-JP>
+
+<ko-KR>
+마시멜로 이상 기기에서 권한체크
+바코드 리더기 오류 수정
+기타 사용성 개선
+</ko-KR>
+

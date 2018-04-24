@@ -152,12 +152,12 @@ implements OnClickListener, OnCheckedChangeListener{
 			        	currentPhotoPos = ccPicUtil.eraseContent(ccGalleryPicviewAct.this
 			        			,PhotoData.get(currentPhotoPos).PhotoId , PhotoData.size(), currentPhotoPos);
 			        	PhotoData.remove(pos);
-			        	if(currentPhotoPos == -1){
-			        		galleryFinish();
-			        		return;
-			        	}
 			        	getData(currentPhotoPos);
 			        	changePager(currentPhotoPos);
+						if(currentPhotoPos == -1){
+							galleryFinish();
+							return;
+						}
 			        	viewExifInfo(currentPhotoPos);
 			        	Toast toast = Toast.makeText(ccGalleryPicviewAct.this, 
 			        			ccGalleryPicviewAct.this.getText(R.string.file_delete_success),

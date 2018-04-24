@@ -19,7 +19,7 @@ android {
         applicationId "com.epriest.cherryCamera"
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 1217
+        versionCode 1218
         versionName '1.4.5.0'
     }
     buildTypes {
