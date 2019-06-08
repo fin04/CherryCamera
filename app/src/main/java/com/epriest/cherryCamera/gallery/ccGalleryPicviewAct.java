@@ -1,5 +1,6 @@
 package com.epriest.cherryCamera.gallery;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import com.epriest.cherryCamera.R;
@@ -24,8 +25,10 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.media.ExifInterface;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.support.v4.content.FileProvider;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.Gravity;
@@ -181,7 +184,8 @@ implements OnClickListener, OnCheckedChangeListener{
 			Intent share = new Intent(Intent.ACTION_SEND);
 			share.setType("image/jpeg");
 //			logline.d("============"+PhotoData.get(currentPhotoPos));PhotoData.get(position).PhotoName;
-			share.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + PhotoData.get(currentPhotoPos).PhotoData));
+			Uri uri = getContentUri(currentPhotoPos);
+			share.putExtra(Intent.EXTRA_STREAM, uri);
 			startActivity(Intent.createChooser(share, "Share image"));
 			break;
 		case R.id.gallery_btn_help:
@@ -198,6 +202,14 @@ implements OnClickListener, OnCheckedChangeListener{
 				etcLL.setVisibility(View.VISIBLE);
 			break;
 		}
+	}
+
+	public Uri getContentUri(int currentPhotoPos){
+		if(ccCamUtil.getSdkVer() < Build.VERSION_CODES.N)
+			return Uri.parse("file://" + PhotoData.get(currentPhotoPos).PhotoData);
+		else
+			return FileProvider.getUriForFile(this, "com.epriest.cherryCamera.fileprovider",
+					new File(PhotoData.get(currentPhotoPos).PhotoData));
 	}
 	
 	@Override

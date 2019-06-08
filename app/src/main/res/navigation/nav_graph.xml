@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ccActivity">
+
+    <activity
+        android:id="@+id/ccActivity"
+        android:name="com.epriest.cherryCamera.ccActivity"
+        android:label="main"
+        tools:layout="@layout/main" />
+    <activity
+        android:id="@+id/cCameraActivity"
+        android:name="com.epriest.cherryCamera.main.cCameraActivity"
+        android:label="main_camera"
+        tools:layout="@layout/main_camera" />
+    <activity
+        android:id="@+id/ccGalleryThumbViewActivity"
+        android:name="com.epriest.cherryCamera.old.ccGalleryThumbViewActivity"
+        android:label="gallery_thumblayout"
+        tools:layout="@layout/gallery_thumblayout" />
+    <activity
+        android:id="@+id/ccGalleryPictureLoader"
+        android:name="com.epriest.cherryCamera.old.ccGalleryPictureLoader"
+        android:label="gallery_picturelayout"
+        tools:layout="@layout/gallery_picturelayout" />
+</navigation>

@@ -13,12 +13,12 @@ android {
             storePassword 'today004A'
         }
     }
-    compileSdkVersion 26
+    compileSdkVersion 28
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.epriest.cherryCamera"
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1218
         versionName '1.4.5.0'
     }
@@ -40,9 +40,13 @@ android {
 }
 
 dependencies {
-    compile files('libs/universal-image-loader-1.9.4.jar')
-    compile 'com.google.firebase:firebase-ads:10.0.1'
-    compile 'com.android.support:support-v4:26.0.0-alpha1'
-    compile 'com.journeyapps:zxing-android-embedded:3.5.0'
+    def nav_version = "1.0.0-beta01"
+    implementation "android.arch.navigation:navigation-fragment:$nav_version"
+    // use -ktx for Kotlin
+    implementation "android.arch.navigation:navigation-ui:$nav_version"
+    // use -ktx for Kotlin
+    implementation files('libs/universal-image-loader-1.9.4.jar')
+    implementation 'com.google.firebase:firebase-ads:16.0.1'
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
 }
 apply plugin: 'com.google.gms.google-services'
