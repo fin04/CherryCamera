@@ -7,14 +7,14 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
     signingConfigs {
         release {
-            keyAlias 'epriest'
-            keyPassword 'today004A'
-            storeFile file('F:/project/androidStudio/android_signed_key')
-            storePassword 'today004A'
+            keyAlias keystoreProperties.getProperty('keyAlias')
+            keyPassword keystoreProperties.getProperty('keyPassword')
+            storeFile file(keystoreProperties.getProperty('storeFile'))
+            storePassword keystoreProperties.getProperty('storePassword')
         }
     }
     compileSdkVersion 28
-    buildToolsVersion '27.0.3'
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "com.epriest.cherryCamera"
         minSdkVersion 14
@@ -27,7 +27,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             signingConfig signingConfigs.release
             debuggable false
-            minifyEnabled false
+            minifyEnabled true
         }
         debug {
             debuggable true
@@ -36,6 +36,12 @@ android {
         }
     }
     productFlavors {
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
     }
 }
 
@@ -46,7 +52,7 @@ dependencies {
     implementation "android.arch.navigation:navigation-ui:$nav_version"
     // use -ktx for Kotlin
     implementation files('libs/universal-image-loader-1.9.4.jar')
-    implementation 'com.google.firebase:firebase-ads:16.0.1'
+    implementation 'com.google.firebase:firebase-ads:11.0.4'
     implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
 }
 apply plugin: 'com.google.gms.google-services'
