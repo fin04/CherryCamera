@@ -1174,7 +1174,11 @@ public class ccCamUtil{
 	        return false;
 	    }
 	}
-	
+
+	/**
+	 * 디바이스의 카메라를 체크.
+	 * @return
+	 */
 	public static int checkCameraFacingMode(){
 		logline.d("*****Build.VERSION.SDK_INT**** "+ccCamUtil.getSdkVer());
 		if(ccCamUtil.getSdkVer() > 8){
@@ -1183,7 +1187,6 @@ public class ccCamUtil{
 		    if(cameraCount == 0)
 		    	return 0;
 		    Camera.getCameraInfo( 0, cameraInfo);
-//		    logline.d("CAMERA_FACING : "+ cameraInfo.facing);
 		    
 		    if(cameraCount == 1){
 		    	if(cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_BACK)
@@ -1192,13 +1195,10 @@ public class ccCamUtil{
 		    		return IN.CAMERA_ID_FRONT;
 		    	
 		    }else if(cameraCount == 2){
-//		    	if(cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_BACK)
 		    		return IN.CAMERA_ID_BACK_FRONT;
-//		    	else if(cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_FRONT)
-//		    		return IN.CAMERA_ID_FRONT_BACK;
 		    }
 		}
-	    return 0;
+	    return IN.CAMERA_ID_NONE;
 	}
 	
 	public static Camera getCameraInstance(int cameraFacingMode, boolean frontCameraAccess){

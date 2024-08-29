@@ -23,7 +23,10 @@
     
     <dimen name="GALLERYBUTTON_WIDTH">65dp</dimen>
     <dimen name="GALLERYBUTTON_HEIGHT">65dp</dimen>
-    
+
+    <dimen name="MENUBUTTON_SIZE">80dp</dimen>
+    <dimen name="MENUBUTTON_MARGIN">16dp</dimen>
+
     <dimen name="SIDEBUTTON_WIDTH">24dp</dimen>
     
     <dimen name="EXPOSEEK_WIDTH">330dp</dimen>

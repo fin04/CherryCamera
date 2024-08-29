@@ -5,8 +5,10 @@ package com.epriest.cherryCamera.util;
 import android.content.Context;
 import android.util.Log;
 
+import com.google.firebase.BuildConfig;
+
 public class logline {
-	static boolean isLog = true;//BuildConfig.DEBUG;
+	static boolean isLog = BuildConfig.DEBUG;
 	public static void d(String str){		
 		if (isLog)
 			Log.d(IN.TAG, str);

@@ -6,60 +6,69 @@
 
     <ImageButton
         android:id="@+id/btn_camera_option"
-        android:layout_width="@dimen/GALLERYBUTTON_HEIGHT"
-        android:layout_height="@dimen/GALLERYBUTTON_HEIGHT"
-        android:layout_marginBottom="15dp"
+        android:layout_width="@dimen/MENUBUTTON_SIZE"
+        android:layout_height="@dimen/MENUBUTTON_SIZE"
+        android:layout_marginBottom="@dimen/MENUBUTTON_MARGIN"
         android:background="@drawable/selector_boxbutton"
         android:scaleType="fitXY"
         android:src="@drawable/menu" />
 
     <ImageButton
-        android:id="@+id/btn_cherryfilter"
-        android:layout_width="@dimen/GALLERYBUTTON_HEIGHT"
-        android:layout_height="@dimen/GALLERYBUTTON_HEIGHT"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/selector_boxbutton"
-        android:src="@drawable/cherry_off" />
-    
-    <ImageButton
-        android:id="@+id/btn_camera_face"
-        android:layout_width="@dimen/GALLERYBUTTON_HEIGHT"
-        android:layout_height="@dimen/GALLERYBUTTON_HEIGHT"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/selector_boxbutton"
-        android:src="@drawable/camera_change"
-        android:visibility="gone" />
-    
-    <ImageButton
-        android:id="@+id/btn_camera_timer"
-        android:layout_width="@dimen/GALLERYBUTTON_HEIGHT"
-        android:layout_height="@dimen/GALLERYBUTTON_HEIGHT"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/selector_boxbutton"
-        android:src="@drawable/timer" />
-
-    <ImageButton
         android:id="@+id/btn_camera_flash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_width="@dimen/MENUBUTTON_SIZE"
+        android:layout_height="@dimen/MENUBUTTON_SIZE"
+        android:layout_marginBottom="@dimen/MENUBUTTON_MARGIN"
         android:background="@drawable/selector_boxbutton"
         android:src="@drawable/flash_auto"
         android:visibility="gone" />
 
     <ImageButton
-        android:id="@+id/btn_camera_focus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/btn_camera_timer"
+        android:layout_width="@dimen/MENUBUTTON_SIZE"
+        android:layout_height="@dimen/MENUBUTTON_SIZE"
+        android:layout_marginBottom="@dimen/MENUBUTTON_MARGIN"
         android:background="@drawable/selector_boxbutton"
-        android:src="@drawable/focus_auto"
+        android:src="@drawable/timer" />
+
+    <ImageButton
+        android:id="@+id/btn_camera_face"
+        android:layout_width="@dimen/MENUBUTTON_SIZE"
+        android:layout_height="@dimen/MENUBUTTON_SIZE"
+        android:layout_marginBottom="@dimen/MENUBUTTON_MARGIN"
+        android:background="@drawable/selector_boxbutton"
+        android:src="@drawable/camera_change" />
+
+    <ImageButton
+        android:id="@+id/btn_camera_barcode"
+        android:layout_width="@dimen/MENUBUTTON_SIZE"
+        android:layout_height="@dimen/MENUBUTTON_SIZE"
+        android:layout_marginBottom="@dimen/MENUBUTTON_MARGIN"
+        android:background="@drawable/selector_boxbutton"
+        android:src="@drawable/scene_barcode"
         android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btn_camera_effect"
+        android:layout_width="@dimen/MENUBUTTON_SIZE"
+        android:layout_height="@dimen/MENUBUTTON_SIZE"
+        android:layout_marginBottom="@dimen/MENUBUTTON_MARGIN"
+        android:background="@drawable/selector_boxbutton"
+        android:src="@drawable/effect_other"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btn_cherryfilter"
+        android:layout_width="@dimen/MENUBUTTON_SIZE"
+        android:layout_height="@dimen/MENUBUTTON_SIZE"
+        android:layout_marginBottom="@dimen/MENUBUTTON_MARGIN"
+        android:background="@drawable/selector_boxbutton"
+        android:src="@drawable/cherry_off" />
     
     <ImageButton
         android:id="@+id/btn_camera_zoom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/MENUBUTTON_SIZE"
+        android:layout_height="@dimen/MENUBUTTON_SIZE"
+        android:layout_marginBottom="@dimen/MENUBUTTON_MARGIN"
         android:background="@drawable/selector_boxbutton"
         android:src="@drawable/zoom_off"
         android:visibility="gone" />

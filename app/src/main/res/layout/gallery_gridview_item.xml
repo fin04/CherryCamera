@@ -18,7 +18,7 @@
         android:id="@+id/tv_gallery_thumnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:alpha="0.75"
+        android:alpha="0.5"
         android:text="TextView"
         android:textColor="@color/color_white"
         android:textSize="@dimen/FONTSIZE_TITLE2"
@@ -30,13 +30,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:paddingBottom="10dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:paddingTop="10dp"
         android:background="#55000000"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
         android:textColor="@color/color_white"
         android:textSize="@dimen/FONTSIZE_Normal"
-        android:typeface="serif" />
+        android:typeface="serif"
+        android:visibility="invisible" />
 
 </FrameLayout>

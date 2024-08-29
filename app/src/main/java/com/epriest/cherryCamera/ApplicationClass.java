@@ -11,6 +11,10 @@ import android.util.DisplayMetrics;
 import com.epriest.cherryCamera.main.cCameraMenuSet;
 import com.epriest.cherryCamera.main.cCameraParameters;
 import com.epriest.cherryCamera.main.cCameraPreview;
+import com.epriest.cherryCamera.main.fragment.FragmentBottom;
+import com.epriest.cherryCamera.main.fragment.FragmentLeft;
+import com.epriest.cherryCamera.main.fragment.FragmentMain;
+import com.epriest.cherryCamera.main.fragment.FragmentUpper;
 import com.epriest.cherryCamera.util.IN;
 
 public class ApplicationClass extends Application {
@@ -20,6 +24,11 @@ public class ApplicationClass extends Application {
 //	public ArrayList<String> PhotoDate = new ArrayList<String>();
 //	public ArrayList<String> PhotoDataSize = new ArrayList<String>();
 //	public ArrayList<String> PhotoData = new ArrayList<String>();
+
+	public FragmentMain fragmentMain;
+	public FragmentUpper fragmentUpper;
+	public FragmentBottom fragmentBottom;
+	public FragmentLeft fragmentLeft;
 	
 	public List<String> ListFlashMode = null;
 	public List<String> ListColorEffect = null;
@@ -30,7 +39,8 @@ public class ApplicationClass extends Application {
 	public List<String> ListWhiteBalance = null;
 	public List<String> ListAntibanding = null;
 //	public Size ListThumbnailSize = null;
-	
+
+	public String sceneName;
 	
 	//flowerFilterMode
 	public int isCherryFilter;
@@ -53,14 +63,15 @@ public class ApplicationClass extends Application {
 	
 	//optionMenuState
 	public int openOption;
-	
+
+	public int timerCountMil = 0;
+	public int timerCount = 0;
 	
 	public int orientation;
 //	public int state;
 	
 	//isLowRam
 	public boolean isOutOfMem = false;
-	
 	
 	public Activity mActivity;
 	public cCameraPreview mPreview;

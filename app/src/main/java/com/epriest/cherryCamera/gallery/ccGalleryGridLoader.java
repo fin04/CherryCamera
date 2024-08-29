@@ -22,6 +22,7 @@ import android.widget.TextView;
 
 import com.epriest.cherryCamera.R;
 import com.epriest.cherryCamera.gallery.ccPhotoInfo.PhotoItem;
+import com.epriest.cherryCamera.util.ccFirebase;
 import com.epriest.cherryCamera.util.ccPicUtil;
 import com.epriest.cherryCamera.util.ccCamUtil;
 import com.google.android.gms.ads.AdRequest;
@@ -48,14 +49,7 @@ public class ccGalleryGridLoader extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gallery_thumblayout);
 
-		MobileAds.initialize(getApplicationContext(), getString(R.string.banner_ad_unit_id));
-		AdView mAdView = (AdView) findViewById(R.id.adView);
-		AdRequest adRequest = new AdRequest.Builder()
-				.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)        // All emulators
-//				.addTestDevice("F51F2A6C4A6290BDB0C711BAE2697457")
-//				.addTestDevice("7763B915C09B3BF4C69010EE31F744D6")
-				.build();
-		mAdView.loadAd(adRequest);
+		ccFirebase.setAdMob(this);
 
 		DisplayMetrics displayMetrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
@@ -207,8 +201,8 @@ public class ccGalleryGridLoader extends Activity {
 			
 			PhotoItem item = (PhotoItem) data.get(position);
 			holder.imageNumber.setText(Integer.toString(data.size()-position));
-//			holder.imageTitle.setText(item.getPicname());
-			holder.imageTitle.setText(ccCamUtil.changeDateFormat(item.PhotoDate, "yyyy-MM-dd"));
+			holder.imageTitle.setText(item.PhotoName);
+//			holder.imageTitle.setText(ccCamUtil.changeDateFormat(item.PhotoDate, "yyyy-MM-dd"));
 			
 //			final ViewHolder holder_ = holder;
 			String uri = "file://"+item.PhotoData;

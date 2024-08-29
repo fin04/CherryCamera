@@ -53,7 +53,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/iv_menuFlowerUpper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
         android:layout_gravity="top|right"
         android:layout_marginRight="100dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/menu_flower_bottom" />
+        android:src="@drawable/menu_flower_bottom" />-->
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
             android:layout_marginBottom="3dp"
             android:orientation="horizontal" >
 
-            <Button
+            <!--<Button
                 android:id="@+id/menu_button_cameramode"
                 style="@style/MenuTabButton"
                 android:layout_width="wrap_content"
@@ -137,9 +137,9 @@
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/selector_menu_tabbutton"
                 android:maxLines="1"
-                android:text="@string/qr_reader" />
+                android:text="@string/qr_reader" />-->
 
-            <Button
+            <!--<Button
                 android:id="@+id/menu_button_gallery"
                 style="@style/MenuTabButton"
                 android:layout_width="wrap_content"
@@ -147,7 +147,7 @@
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/selector_menu_tabbutton"
                 android:maxLines="1"
-                android:text="@string/menutab_gallery" />
+                android:text="@string/menutab_gallery" />-->
         </LinearLayout>
 
         <LinearLayout

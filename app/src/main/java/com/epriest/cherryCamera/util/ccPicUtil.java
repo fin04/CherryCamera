@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import com.epriest.cherryCamera.ApplicationClass;
 import com.epriest.cherryCamera.gallery.ccPhotoInfo.PhotoItem;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -128,7 +129,8 @@ public class ccPicUtil {
 		return cur.getCount();		
 	}
 	
-	static public PhotoItem getContent(Activity act, Uri imageUri){
+	@SuppressLint("Range")
+    static public PhotoItem getContent(Activity act, Uri imageUri){
 		PhotoItem item = new PhotoItem();
 		String[] projection = new String[]{
 	            MediaStore.Images.Media._ID,
@@ -194,6 +196,7 @@ public class ccPicUtil {
 		return path;
 	}
 
+	@SuppressLint("Range")
 	static public ArrayList<PhotoItem> getContentList(Activity act){
 		ArrayList<PhotoItem> PhotoData = new ArrayList<PhotoItem>();		
 		String[] projection = new String[]{
@@ -213,7 +216,7 @@ public class ccPicUtil {
 			cur.moveToLast();
 			while (!cur.isBeforeFirst()) {
             	PhotoItem item = new PhotoItem();        	
- 	            String bucket = cur.getString(cur.getColumnIndex(MediaStore.Images.Media.BUCKET_DISPLAY_NAME));
+				String bucket = cur.getString(cur.getColumnIndex(MediaStore.Images.Media.BUCKET_DISPLAY_NAME));
             	if(bucket.equals("cherrycamera")){
             		item.PhotoId = cur.getString(cur.getColumnIndex(MediaStore.Images.Media._ID));
      	            item.PhotoDate = cur.getString(cur.getColumnIndex(MediaStore.Images.Media.DATE_TAKEN));

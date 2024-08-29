@@ -7,13 +7,11 @@ import com.epriest.cherryCamera.R;
 import com.epriest.cherryCamera.gallery.ccPhotoInfo.PhotoExif;
 import com.epriest.cherryCamera.gallery.ccPhotoInfo.PhotoItem;
 import com.epriest.cherryCamera.util.ccCamUtil;
+import com.epriest.cherryCamera.util.ccFirebase;
 import com.epriest.cherryCamera.util.ccPicUtil;
 import com.epriest.cherryCamera.util.ccPicUtil.BitmapInfo;
 import com.epriest.cherryCamera.util.ccUtil;
 import com.epriest.cherryCamera.util.logline;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -28,9 +26,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.content.FileProvider;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -43,9 +39,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.core.content.FileProvider;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 public class ccGalleryPicviewAct extends Activity 
 implements OnClickListener, OnCheckedChangeListener{
-    private ViewPager mPager;    
+    private ViewPager mPager;
     int currentPhotoPos;
     boolean isErase;
     private boolean isFullImage = false;
@@ -56,14 +56,7 @@ implements OnClickListener, OnCheckedChangeListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gallery_picturelayout);
 
-		MobileAds.initialize(getApplicationContext(), getString(R.string.banner_ad_unit_id));
-		AdView mAdView = (AdView) findViewById(R.id.adView);
-		AdRequest adRequest = new AdRequest.Builder()
-				.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)        // All emulators
-//				.addTestDevice("F51F2A6C4A6290BDB0C711BAE2697457")
-//				.addTestDevice("7763B915C09B3BF4C69010EE31F744D6")
-				.build();
-		mAdView.loadAd(adRequest);
+		ccFirebase.setAdMob(this);
 
         Intent i = getIntent();
 		if(i != null){
@@ -133,24 +126,24 @@ implements OnClickListener, OnCheckedChangeListener{
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()){
-		case R.id.gallery_exif_info:			
+		case R.id.gallery_exif_info:
 			LinearLayout tvInfo = (LinearLayout)findViewById(R.id.gallery_exif_window);
 			if(tvInfo.getVisibility() == View.VISIBLE)
 				tvInfo.setVisibility(View.GONE);
 			else
-				tvInfo.setVisibility(View.VISIBLE);			
+				tvInfo.setVisibility(View.VISIBLE);
 			break;
 		case R.id.gallery_btn_erase:
 			AlertDialog.Builder alert = new AlertDialog.Builder(this);
 			alert.setTitle(getResources().getString(R.string.alerttitle));
 			alert.setMessage(getResources().getString(R.string.eraseMessage));
-			alert.setPositiveButton(getResources().getString(R.string.msg_yes), 
+			alert.setPositiveButton(getResources().getString(R.string.msg_yes),
 					new DialogInterface.OnClickListener() {
 			    public void onClick( DialogInterface dialog, int which) {
 			        dialog.dismiss();
 			        if(!isErase){
 			        	isErase = true;//
-			        	logline.d(" e currentPhotoPos : "+currentPhotoPos);		
+			        	logline.d(" e currentPhotoPos : "+currentPhotoPos);
 			        	int pos = currentPhotoPos;
 			        	currentPhotoPos = ccPicUtil.eraseContent(ccGalleryPicviewAct.this
 			        			,PhotoData.get(currentPhotoPos).PhotoId , PhotoData.size(), currentPhotoPos);
@@ -162,7 +155,7 @@ implements OnClickListener, OnCheckedChangeListener{
 							return;
 						}
 			        	viewExifInfo(currentPhotoPos);
-			        	Toast toast = Toast.makeText(ccGalleryPicviewAct.this, 
+			        	Toast toast = Toast.makeText(ccGalleryPicviewAct.this,
 			        			ccGalleryPicviewAct.this.getText(R.string.file_delete_success),
 			        			Toast.LENGTH_SHORT);
 			        	toast.setGravity(Gravity.CENTER, 0, 150);
@@ -172,7 +165,7 @@ implements OnClickListener, OnCheckedChangeListener{
 			        }
 			    }
 			});
-			alert.setNegativeButton(getResources().getString(R.string.msg_no), 
+			alert.setNegativeButton(getResources().getString(R.string.msg_no),
 					new DialogInterface.OnClickListener() {
 			    public void onClick( DialogInterface dialog, int which) {
 			        dialog.dismiss();
@@ -334,11 +327,11 @@ implements OnClickListener, OnCheckedChangeListener{
 		//==============
 		// photo date
 		//==============
-		TextView tvDate = (TextView)findViewById(R.id.gallery_text_filename);
+		TextView tvName = (TextView)findViewById(R.id.gallery_text_filename);
 //		String pDate = ccCamUtil.changeDateFormat(PhotoData.get(position).PhotoDate
 //				, "yyyy-MM-dd a HH:mm:ss");
-		String pDate = PhotoData.get(position).PhotoName;
-		tvDate.setText(pDate);
+		String pName = PhotoData.get(position).PhotoName;
+		tvName.setText(pName);
 		
 		//==============
 		// photo file size
@@ -366,12 +359,13 @@ implements OnClickListener, OnCheckedChangeListener{
 			galleryFinish();
 			return null;
 		}
-		if(ccPicUtil.wrongBitmap(PhotoData.get(photoNum).PhotoData))
-    		return BitmapFactory.decodeResource(ccGalleryPicviewAct.this.getResources()
-    				, R.drawable.wrong_file);
-		else if(ccUtil.nullFile(PhotoData.get(photoNum).PhotoData))
-    		return BitmapFactory.decodeResource(ccGalleryPicviewAct.this.getResources()
-    				, R.drawable.wrong_file);
+		if(ccPicUtil.wrongBitmap(PhotoData.get(photoNum).PhotoData)) {
+			return BitmapFactory.decodeResource(ccGalleryPicviewAct.this.getResources()
+					, R.drawable.wrong_file);
+		} else if(ccUtil.nullFile(PhotoData.get(photoNum).PhotoData)) {
+			return BitmapFactory.decodeResource(ccGalleryPicviewAct.this.getResources()
+					, R.drawable.wrong_file);
+		}
 
     	return setPreviewImageView(photoNum);
 	}
@@ -403,7 +397,7 @@ implements OnClickListener, OnCheckedChangeListener{
 		return bitmap;
 	}
 	
-	private class PagerAdapterClass extends PagerAdapter{
+	private class PagerAdapterClass extends PagerAdapter {
 
 		private LayoutInflater mInflater;
 		

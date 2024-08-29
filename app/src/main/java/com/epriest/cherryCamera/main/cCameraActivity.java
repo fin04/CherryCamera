@@ -7,18 +7,16 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
 import android.graphics.Matrix;
-import android.graphics.Point;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffColorFilter;
-import android.graphics.Rect;
-import android.hardware.Camera.Area;
 import android.media.ExifInterface;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.OrientationEventListener;
-import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
@@ -33,8 +31,6 @@ import com.epriest.cherryCamera.util.ccCamUtil;
 import com.epriest.cherryCamera.util.ccPicUtil;
 import com.epriest.cherryCamera.util.logline;
 
-import java.util.ArrayList;
-
 /**
  * @author Camera Activity
  *
@@ -43,18 +39,30 @@ public class cCameraActivity extends Activity{
 	
 	private String TAG = this.getClass().getSimpleName();
 	private ApplicationClass appClass;
-	
-    private String sceneName;
+
     private float oldTouchValue;    
     private String intentGetAction;
     
     PorterDuffColorFilter mColorFilter;
     ImageView ivPitch;
     ImageView ivPitchOn;
-    
     OrientationEventListener myOrientationEventListener;
 
-    @Override
+//	@Override
+//	public void onWindowFocusChanged(boolean hasFocus) {
+//		super.onWindowFocusChanged(hasFocus);
+//		if (hasFocus) {
+//			getWindow().getDecorView().setSystemUiVisibility(
+//					View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+//							| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+//							| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+//							| View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+//							| View.SYSTEM_UI_FLAG_FULLSCREEN
+//							| View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+//		}
+//	}
+
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		logline.d(TAG, "cCamera Activity onCreate");
@@ -85,16 +93,16 @@ public class cCameraActivity extends Activity{
 		//  scene load
 		//  ===========
 		Intent intent = getIntent();
-		sceneName = intent.getExtras().getString("sceneName", "auto");	
+		appClass.sceneName = intent.getExtras().getString("sceneName", "auto");
 		intentGetAction = intent.getExtras().getString("getAction");
-		logline.d(TAG, "getAction="+intentGetAction+"\nsceneName = "+sceneName);
+		logline.d(TAG, "getAction="+intentGetAction+"\nsceneName = "+ appClass.sceneName);
 //		sceneButtonSetBg();
 
-		if(sceneName.equalsIgnoreCase(IN.CAMERA_FACING))
+		if(appClass.sceneName.equalsIgnoreCase(IN.CAMERA_FACING))
 			appClass.mMenuset.frontCameraAccess = true;
 		appClass.cameraFacingMode = ccCamUtil.checkCameraFacingMode();
 		
-		appClass.mPreview = new cCameraPreview(this, sceneName, appClass);
+		appClass.mPreview = new cCameraPreview(this, appClass);
 		
         // Create our Preview view and set it as the content of our activity.        
         FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
@@ -268,18 +276,18 @@ public class cCameraActivity extends Activity{
 		case KeyEvent.KEYCODE_CAMERA:
 			if(appClass.mPreview.iShutter)
 				return true;	
-			if(appClass.mMenuset.timerCount > 0){
-				appClass.mMenuset.timerCountMil = appClass.mMenuset.timerCount*1000;
-				TextView tv = (TextView)appClass.getActivity().findViewById(R.id.camera_timer_text);
-				appClass.mMenuset.timer.setTextView(tv);
-				appClass.mMenuset.timer.Start();
+			if(appClass.timerCount > 0){
+				appClass.timerCountMil = appClass.timerCount*1000;
+				TextView tv = appClass.getActivity().findViewById(R.id.camera_timer_text);
+				appClass.fragmentMain.timer.setTextView(tv);
+				appClass.fragmentMain.timer.Start();
 			}else{
 				appClass.mPreview.shootOn();
 			}
 			break;
 		case KeyEvent.KEYCODE_BACK:
-			if(appClass.mMenuset.timerCountMil > 0){
-				appClass.mMenuset.timer.Stop();
+			if(appClass.timerCountMil > 0){
+				appClass.fragmentMain.timer.Stop();
 			}else
 			if (appClass.openOption != IN.MODE_OPENMENU_CLOSE){
 				appClass.mMenuset.openOptionClose();
@@ -387,7 +395,7 @@ public class cCameraActivity extends Activity{
 		Button ivCameraMemory = (Button)findViewById(R.id.btn_camera_freememory);
 		Button ivCameraBattery = (Button)findViewById(R.id.btn_camera_bettery);
 		ImageButton ivCameraScene = (ImageButton)findViewById(R.id.btn_camera_scene);
-		ImageView ivCameraFlash = (ImageView)findViewById(R.id.icon_camera_flash);
+//		ImageView ivCameraFlash = (ImageView)findViewById(R.id.icon_camera_flash);
 		ImageView ivCameraFocus = (ImageView)findViewById(R.id.icon_camera_focus);
 		TextView ivCameraExpo = (TextView)findViewById(R.id.text_camera_exposure);
 
@@ -400,7 +408,7 @@ public class cCameraActivity extends Activity{
 			ivCameraScene.startAnimation(ccPicUtil.rotateAnimation(this, 0, -90, 0, 0));
 			ivCameraMemory.startAnimation(ccPicUtil.rotateAnimation(this, 0, -90, 0, 0));
 			ivCameraBattery.startAnimation(ccPicUtil.rotateAnimation(this, 0, -90, 0, 0));
-			ivCameraFlash.startAnimation(ccPicUtil.rotateAnimation(this, 0, -90, 0, 0));
+//			ivCameraFlash.startAnimation(ccPicUtil.rotateAnimation(this, 0, -90, 0, 0));
 			ivCameraFocus.startAnimation(ccPicUtil.rotateAnimation(this, 0, -90, 0, 0));
 			ivCameraExpo.startAnimation(ccPicUtil.rotateAnimation(this, 0, -90, 0, 0));
 			break;
@@ -412,7 +420,7 @@ public class cCameraActivity extends Activity{
 			ivCameraScene.startAnimation(ccPicUtil.rotateAnimation(this, -90, 0, 0, 0));
 			ivCameraMemory.startAnimation(ccPicUtil.rotateAnimation(this, -90, 0, 0, 0));
 			ivCameraBattery.startAnimation(ccPicUtil.rotateAnimation(this, -90, 0, 0, 0));
-			ivCameraFlash.startAnimation(ccPicUtil.rotateAnimation(this, -90, 0, 0, 0));
+//			ivCameraFlash.startAnimation(ccPicUtil.rotateAnimation(this, -90, 0, 0, 0));
 			ivCameraFocus.startAnimation(ccPicUtil.rotateAnimation(this, -90, 0, 0, 0));
 			ivCameraExpo.startAnimation(ccPicUtil.rotateAnimation(this, -90, 0, 0, 0));
 			break;

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Cherry Camera!</string>
-    <string name="banner_ad_unit_id">ca-app-pub-8684079291236473/5227367033</string>
+    <string name="banner_ad_app_id">ca-app-pub-8684079291236473~3223922635</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8684079291236473/6177389032</string>
     <string name="upload_message">Hold on. please.</string>
     <string name="notmodemessage">Not support Mode</string>
     <string name="caution_lowdevice">caution low-end devices</string>

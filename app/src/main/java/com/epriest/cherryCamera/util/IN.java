@@ -8,9 +8,10 @@ public interface IN {
 	static final public String AD_NUM = "a14ecb67bd1c630";
 	
 	static final public int STATE_MENU = 19;
-	
+
+	static final public int CAMERA_ID_NONE = 0;
 	static final public int CAMERA_ID_BACK_FRONT = 1;
-	static final public int CAMERA_ID_FRONT_BACK = 2;
+//	static final public int CAMERA_ID_FRONT_BACK = 2;
 	static final public int CAMERA_ID_BACK = 3;
 	static final public int CAMERA_ID_FRONT = 4;
 	
@@ -64,7 +65,7 @@ public interface IN {
 	static final float VOL_MED = 0.5f;
 	static final float VOL_HIGH = 0.8f;
 	static final long ViberateTime = 100;
-	static final long ShootViberateTime = 30;
+	static final long ViberateTime_Easy = 30;
 	static final int menuframeTitleY = 7;
 
 	static final int TOUCH_NONE = 100;

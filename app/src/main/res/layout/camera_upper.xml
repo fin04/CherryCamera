@@ -18,7 +18,8 @@
             android:layout_marginLeft="10dp"
             android:text="widthxheight"
             android:textColor="@color/color_white"
-            android:textSize="@dimen/FONTSIZE_Normal" />
+            android:textSize="@dimen/FONTSIZE_Normal"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/text_camera_exposure"
@@ -37,25 +38,25 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:src="@drawable/focus_auto"
-            android:visibility="visible" />
+            android:visibility="gone" />
 
         <ImageView
-            android:id="@+id/icon_camera_flash"
-            android:layout_width="35dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/flash_auto"
-            android:visibility="visible" />
+        android:id="@+id/icon_camera_flash"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/flash_auto"
+        android:visibility="gone" />
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/icon_camera_timer"
             android:layout_width="35dp"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:src="@drawable/timer"
-            android:visibility="gone" />
+            android:visibility="gone" />-->
 
         <LinearLayout
             android:id="@+id/layout_info"

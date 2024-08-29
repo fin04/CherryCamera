@@ -63,12 +63,12 @@ public class cCameraPreview extends SurfaceView implements SurfaceHolder.Callbac
     public boolean isCameraPause = false;
 
     public int camera_id;
-    public String sceneName;
-    private boolean isButtonSetting;
+
+    public boolean isButtonSetting;
     private boolean isTakingPic;
 
     public boolean iShutter = false;
-    boolean isSetFocus;
+    public boolean isSetFocus;
     public ProgressDialog pd;
     public Bitmap previewBitmap;
 
@@ -79,11 +79,10 @@ public class cCameraPreview extends SurfaceView implements SurfaceHolder.Callbac
     public int previewW, previewH;
 
 
-    public cCameraPreview(Context context, String sceneName, ApplicationClass appClass) {
+    public cCameraPreview(Context context, ApplicationClass appClass) {
         super(context);
         logline.d(TAG, "cCameraPreview()");
         this.appClass = appClass;
-        this.sceneName = sceneName;
 
         pd = new ProgressDialog(appClass.getActivity());
 //		LayoutInflater inflater = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
@@ -348,7 +347,7 @@ public class cCameraPreview extends SurfaceView implements SurfaceHolder.Callbac
         appClass.mParameter.whiteBalance(params);
         appClass.mParameter.supportedAntibanding(params);
         appClass.mParameter.colorEffect(params);
-        appClass.mParameter.scene(params, sceneName);
+        appClass.mParameter.scene(params, appClass.sceneName);
         appClass.mParameter.supportedFocusModes(params);
         appClass.mParameter.supportedFlashModes(params);
         appClass.mParameter.pictureSize(params);
@@ -420,7 +419,7 @@ public class cCameraPreview extends SurfaceView implements SurfaceHolder.Callbac
         }
     }
 
-    AutoFocusCallback mAutoFocusCallback = new AutoFocusCallback() {
+    public AutoFocusCallback mAutoFocusCallback = new AutoFocusCallback() {
         @Override
         public void onAutoFocus(boolean arg0, Camera arg1) {
             logline.d(TAG, "autofocus");
@@ -431,7 +430,7 @@ public class cCameraPreview extends SurfaceView implements SurfaceHolder.Callbac
 
     };
 
-    AutoFocusCallback mFocusCallback = new AutoFocusCallback() {
+    public AutoFocusCallback mFocusCallback = new AutoFocusCallback() {
         @Override
         public void onAutoFocus(boolean arg0, Camera arg1) {
             isSetFocus = true;
@@ -575,7 +574,7 @@ public class cCameraPreview extends SurfaceView implements SurfaceHolder.Callbac
 
     public void shootOn() {
         pDialogSet(appClass.getResources().getString(R.string.upload_message), true);
-        appClass.mPreview.iShutter = true;
+        iShutter = true;
         if (isSetFocus) {
             capture();
             isSetFocus = false;
@@ -591,7 +590,6 @@ public class cCameraPreview extends SurfaceView implements SurfaceHolder.Callbac
                 mCamera.autoFocus(mAutoFocusCallback);
             }
         }
-//		mPreview.iShutter = true;
     }
 
     public boolean capture() {
@@ -609,7 +607,7 @@ public class cCameraPreview extends SurfaceView implements SurfaceHolder.Callbac
         return false;
     }
 
-    public PreviewCallback mPreview = new PreviewCallback() {
+    PreviewCallback mPreview = new PreviewCallback() {
         @Override
         public void onPreviewFrame(final byte[] data, Camera camera) {
             final int pictureOrientation = appClass.orientation;
@@ -715,7 +713,7 @@ public class cCameraPreview extends SurfaceView implements SurfaceHolder.Callbac
 
     };
 
-    public PictureCallback mPicture = new PictureCallback() {
+    PictureCallback mPicture = new PictureCallback() {
         @Override
         public void onPictureTaken(final byte[] data, Camera camera) {
             final int pictureOrientation = appClass.orientation;

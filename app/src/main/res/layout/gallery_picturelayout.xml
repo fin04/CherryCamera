@@ -6,19 +6,19 @@
     android:layout_height="match_parent"
     android:background="@color/color_black" >
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/gallery_picture_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/buttonLayout1"
-        android:layout_below="@+id/adlayout" />
+        android:layout_below="@+id/adView" />
 
     <ImageView
         android:id="@+id/gallery_helpimage"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_above="@+id/buttonLayout1"
-        android:layout_below="@+id/adlayout"
+        android:layout_below="@+id/adView"
         android:scaleType="fitXY"
         android:src="@drawable/gallery_help"
         android:visibility="invisible" />
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        ads:adSize="BANNER"
+        ads:adSize="SMART_BANNER"
         ads:adUnitId="@string/banner_ad_unit_id">
     </com.google.android.gms.ads.AdView>
 
